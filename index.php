@@ -9,6 +9,7 @@
     <?php
     echo 'hello to jc college here';
     echo 'hello to jc college here from talha';
+    echo 'hello to jc college';
     ?>
 </body>
 </html>
