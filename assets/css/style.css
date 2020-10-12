@@ -1,3 +1,14 @@
+/* Color variables */
+:root{
+  --primary-color: #23a455;
+}
 .selector-for-some-widget {
     box-sizing: content-box;
-  }
+}
+.navbar-brand{
+  /* color: var(--primary-color); */
+  color: rgb(225, 17, 17) !important;
+}
+body{
+  background-color: aqua;
+}
