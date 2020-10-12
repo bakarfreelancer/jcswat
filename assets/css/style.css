@@ -9,6 +9,10 @@
   /* color: var(--primary-color); */
   color: rgb(225, 17, 17) !important;
 }
-body{
-  background-color: aqua;
+/* footer */
+footer{
+  background-color: rgb(76, 71, 71) ;
+  color: aliceblue;
+  padding-bottom: 5px;
+  margin-top: 140px;
 }
