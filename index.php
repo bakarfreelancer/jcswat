@@ -1,5 +1,6 @@
 <?php
 include './includes/components/header.php';
+include './includes/components/footer.php';
 ?>
 
 <!-- BOOTSTRAP JS -->
