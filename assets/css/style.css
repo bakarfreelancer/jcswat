@@ -6,7 +6,7 @@
     box-sizing: content-box;
 }
 /* footer */
-footer{
+.page-footer{
   background-color: rgb(76, 71, 71) ;
   color: aliceblue;
   padding-bottom: 5px;
