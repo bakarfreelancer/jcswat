@@ -5,3 +5,10 @@
 .selector-for-some-widget {
     box-sizing: content-box;
 }
+/* footer */
+footer{
+  background-color: rgb(76, 71, 71) ;
+  color: aliceblue;
+  padding-bottom: 5px;
+  margin-top: 140px;
+}
