@@ -14,7 +14,11 @@
 <body>
 <?php
 include './includes/components/header.php';
+include './includes/pages/home.inc.php';
+include './includes/pages/about.inc.php';
+include './includes/pages/conact.inc.php';
 include './includes/components/footer.php';
+
 ?>
 
 <!-- BOOTSTRAP JS -->
