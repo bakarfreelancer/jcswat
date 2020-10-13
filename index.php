@@ -14,11 +14,25 @@
 <body>
 <?php
 include './includes/components/header.php';
-include './includes/pages/home.inc.php';
-include './includes/pages/about.inc.php';
-include './includes/pages/conact.inc.php';
-include './includes/components/footer.php';
+$pages_folder = 'includes/pages';
+if(isset($_GET['page'])){
+    
+    $page_name = $_GET['page'];
+    $scaned_pages=scandir($pages_folder);
+    unset($scaned_pages[0],$scaned_pages[1]);
+    if(in_array($page_name.'.inc.php',$scaned_pages)){
+        include 'includes/pages/'.$page_name.'.inc.php';
 
+    }else{
+        include 'includes/pages/notfound.inc.php';
+    }
+}else{
+    include 'includes/pages/home.inc.php';
+}
+
+
+
+include './includes/components/footer.php'; //Iclude footer file
 ?>
 
 <!-- BOOTSTRAP JS -->
