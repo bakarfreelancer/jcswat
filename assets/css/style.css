@@ -1,14 +1,82 @@
 /* Color variables */
 :root{
-  --primary-color: #23a455;
+  --primary-color: #33803f;
+  --primary-hover-color: #07300d;
 }
 .selector-for-some-widget {
     box-sizing: content-box;
 }
+.spacer{
+  height: 50px;
+}
+/* navigation bar */
+nav{
+  box-shadow: 0px 0px 12px var(--primary-color);
+}
+/* header */
+.mainMenu ul li a{
+  color: var(--primary-color) !important;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  transition: all 0.3s;
+}
+.mainMenu ul li a:hover,
+.mainMenu ul li a:active{
+  color: var(--primary-hover-color) !important;
+  border-bottom: 2px solid var(--primary-hover-color);
+}
+/* slider */
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.slidercontent {
+  background-color: var(--primary-color);
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slidercontent > h2 {
+  color: #fff;
+}
+.sliderNavigators {
+  margin-top: 320px;
+}
+.sliderNavigators > span {
+  transform: translateY(-120px);
+}
 /* footer */
 .page-footer{
-  background-color: rgb(76, 71, 71) ;
+  background-color: rgb(126, 126, 126) ;
   color: aliceblue;
   padding-bottom: 5px;
-  margin-top: 140px;
 }
+
+
+
+
+
+ /* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { }
+
+
+ /* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { }
+
+ /* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {  }
+
+ /* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+  .logo{
+    max-width: 180px;
+  }
+  .navbar-toggler-icon{
+    font-size: 70%;
+  }
+}
+
