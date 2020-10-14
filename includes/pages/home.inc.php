@@ -49,14 +49,23 @@
 </header>
 <!-- heasder ends -->
 
-<!-- a few lines about college -->
-<div class="container">
+<!-- a few lines about college starts-->
+<div class="container mt-5 mb-5">
   <div class="row justify-content-md-center">
-    <div class="col-md-8">
-      1 of 3 is the firest colum to be displayed here for the demo purpose I added $30 in 69 seconds so I wll display some theig ther
+    <div class="col-md-8 px-3">
+      <div class="">
+        <h2>A Few Words <br>About the Jahanzeb College</h2>
+      </div>
+      <hr class="smallLine">
+      <p class="mt-5">
+      One of the world's premier academic and research institutions, the Jonathan Carroll University has driven new ways of thinking since our 1876 founding. Today, JCU is an intellectual destination that draws inspired scholars to our Hyde Park and international campuses, keeping JCU at the nexus of ideas that challenge and change the world.
+      </p>
     </div>
     <div class="col-md-4">
-      for the photo of university to be dsplayed here for the good looking site
+      <div class="fewWordsLogo px-5">
+        <img src="assets/images/logo.png" alt="">
+      </div>
     </div>
   </div>
 </div>
+<!-- a few lines about college end-->

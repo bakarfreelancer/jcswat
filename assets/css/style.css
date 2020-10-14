@@ -1,3 +1,5 @@
+/* GLOBAL STYLES */
+
 /* Color variables */
 :root{
   --primary-color: #33803f;
@@ -9,10 +11,20 @@
 .spacer{
   height: 50px;
 }
+.smallLine{
+  width: 60px;
+  border: 3px solid var(--primary-color);
+  border-radius: 5px;
+  margin: 25px auto 15px 0;
+}
+
+
 /* navigation bar */
 nav{
   box-shadow: 0px 0px 12px var(--primary-color);
 }
+
+
 /* header */
 .mainMenu ul li a{
   color: var(--primary-color) !important;
@@ -24,6 +36,8 @@ nav{
   color: var(--primary-hover-color) !important;
   border-bottom: 2px solid var(--primary-hover-color);
 }
+
+
 /* slider */
 .carousel-item {
   height: 100vh;
@@ -49,6 +63,17 @@ nav{
 .sliderNavigators > span {
   transform: translateY(-120px);
 }
+
+/* Few words about college */
+.fewWordsLogo img{
+  width: 85%;
+  margin: auto;
+}
+.fewWordsLogo{
+  text-align: center;
+  padding: 30px;
+}
+
 /* footer */
 .page-footer{
   background-color: rgb(126, 126, 126) ;
