@@ -11,11 +11,26 @@
 .spacer{
   height: 50px;
 }
-.smallLine{
+.smallLinePr,
+.smallLineWhite{
   width: 60px;
-  border: 3px solid var(--primary-color);
+  border: 3px solid;
   border-radius: 5px;
   margin: 25px auto 15px 0;
+}.smallLinePr{
+  width: 60px;
+  border-color:var(--primary-color);
+  margin: 25px auto 15px 0;
+}
+.smallLineWhite{
+  width: 60px;
+  border-color: #fff;
+  margin: 25px auto 15px 0;
+}
+
+/* background primary color */
+.bg-pr{
+  background-color: var(--primary-color);
 }
 
 
@@ -72,6 +87,11 @@ nav{
 .fewWordsLogo{
   text-align: center;
   padding: 30px;
+}
+
+/* stastics */
+.stasticsContainer .smallLineWhite{
+  margin: 25px auto 15px auto;
 }
 
 /* footer */

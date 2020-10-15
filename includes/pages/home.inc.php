@@ -56,7 +56,7 @@
       <div class="">
         <h2>A Few Words <br>About the Jahanzeb College</h2>
       </div>
-      <hr class="smallLine">
+      <hr class="smallLinePr">
       <p class="mt-5">
       One of the world's premier academic and research institutions, the Jonathan Carroll University has driven new ways of thinking since our 1876 founding. Today, JCU is an intellectual destination that draws inspired scholars to our Hyde Park and international campuses, keeping JCU at the nexus of ideas that challenge and change the world.
       </p>
@@ -69,3 +69,16 @@
   </div>
 </div>
 <!-- a few lines about college end-->
+
+<!-- stastics starts -->
+<div class="container-fluid bg-pr">
+  <div class="spacer"></div>
+<div class="container stasticsContainer">
+  <div class="text-center">
+    <h2 class="text-white mx-4 text-uppercase">Statistics</h2>
+  </div>
+  <hr class="smallLineWhite">
+</div>
+<div class="spacer"></div>
+</div>
+<!-- stastics end -->
