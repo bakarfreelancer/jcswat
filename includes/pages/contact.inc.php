@@ -8,7 +8,7 @@
       <div class="valid-feedback">
         Looks good!
       </div>
-    </div>
+    </div
     <div class="col-md-6 mb-3">
       <label for="validationServer02">Last name</label>
       <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>

@@ -18,12 +18,10 @@
   border-radius: 5px;
   margin: 25px auto 15px 0;
 }.smallLinePr{
-  width: 60px;
   border-color:var(--primary-color);
   margin: 25px auto 15px 0;
 }
 .smallLineWhite{
-  width: 60px;
   border-color: #fff;
   margin: 25px auto 15px 0;
 }
@@ -89,10 +87,42 @@ nav{
   padding: 30px;
 }
 
-/* stastics */
-.stasticsContainer .smallLineWhite{
+/* statistics */
+.statisticsContainer .smallLineWhite{
   margin: 25px auto 15px auto;
 }
+.statisticsHr{
+  width: 30px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin: 10px auto 15px auto;
+}
+.statisticsIcons {
+  margin-bottom:30px;
+}
+.statisticsIcons i {
+  display: inline-block;
+  font-size: 380%;
+  line-height: 70.4px;
+  padding: 30px;
+  border: solid 1px;
+  border-radius: 50%;
+  /* margin: 20px 1px 0 1px; */
+  /* background-color: rgba(239, 186, 108, 0.2); */
+}
+.statisticsIcons .fa-landmark,
+.statisticsIcons .fa-suitcase {
+  line-height: 70.4px;
+  padding: 30px 37px;
+
+}
+.statisticsCountDiv{
+  font-size: 200%;
+}
+.statisticsCountTitle{
+  font-size: 130%;
+}
+
 
 /* footer */
 .page-footer{

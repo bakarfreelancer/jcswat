@@ -73,12 +73,65 @@
 <!-- stastics starts -->
 <div class="container-fluid bg-pr">
   <div class="spacer"></div>
-<div class="container stasticsContainer">
-  <div class="text-center">
-    <h2 class="text-white mx-4 text-uppercase">Statistics</h2>
+  <div class="container statisticsContainer text-center text-white">
+      <h2 class="text-white mx-4 text-uppercase">Statistics</h2>
+      <hr class="smallLineWhite">
+      <div class="spacer"></div>
+      <div class="row">
+        <div class="col-md-3 mb-5">
+          <div class="statisticsIcons">
+          <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="statisticsText">
+            <div class="statisticsCountDiv">
+              <span class="stasticsCount">90</span>
+              <span>%</span>
+              <hr class="statisticsHr">
+            </div>
+            <p class="statisticsCountTitle">Graduates</p>
+          </div>
+        </div>
+      <div class="col-md-3 mb-5">
+          <div class="statisticsIcons">
+          <i class="fas fa-suitcase"></i>
+          </div>
+          <div class="statisticsText">
+            <div class="statisticsCountDiv">
+              <span class="stasticsCount">30</span>
+              <span>+</span>
+              <hr class="statisticsHr">
+            </div>
+            <p class="statisticsCountTitle">Certified Teachers</p>
+          </div>
+        </div>
+      <div class="col-md-3 mb-5">
+          <div class="statisticsIcons">
+          <i class="fas fa-landmark"></i>
+          </div>
+          <div class="statisticsText">
+            <div class="statisticsCountDiv">
+              <span class="stasticsCount">6</span>
+              <span></span>
+              <hr class="statisticsHr">
+            </div>
+            <p class="statisticsCountTitle">Student Campuses</p>
+          </div>
+        </div>
+      <div class="col-md-3 mb-5">
+          <div class="statisticsIcons">
+          <i class="fas fa-users"></i>
+          </div>
+          <div class="statisticsText">
+            <div class="statisticsCountDiv">
+              <span class="stasticsCount">2380</span>
+              <span></span>
+              <hr class="statisticsHr">
+            </div>
+            <p class="statisticsCountTitle">Students</p>
+          </div>
+        </div>
+      </div>
   </div>
-  <hr class="smallLineWhite">
-</div>
-<div class="spacer"></div>
+  <div class="spacer"></div>
 </div>
 <!-- stastics end -->
