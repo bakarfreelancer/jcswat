@@ -12,7 +12,7 @@
 
       <!-- Content -->
       <h5 class="font-weight-bold text-uppercase mb-4">Footer Content</h5>
-      <p>Here you can use rows and columns to organize your footer content.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate
         esse
         quasi, veritatis totam voluptas nostrum.</p>
@@ -31,22 +31,22 @@
       <ul class="list-unstyled">
         <li>
           <p>
-            <a href="#!">PROJECTS</a>
+            <a href="index.php?page=about">ABOUT COLLEGE</a>
           </p>
         </li>
         <li>
           <p>
-            <a href="#!">ABOUT US</a>
+            <a href="index.php?page=contact">CONTACT</a>
           </p>
         </li>
         <li>
           <p>
-            <a href="#!">BLOG</a>
+            <a href="#">DEPARTMENTS</a>
           </p>
         </li>
         <li>
           <p>
-            <a href="#!">AWARDS</a>
+            <a href="index.php?page=login">LOGIN</a>
           </p>
         </li>
       </ul>
@@ -119,8 +119,8 @@
 <!-- Footer Links -->
 
 <!-- Copyright -->
-<div class="footer-copyright text-center py-3">© 2020 Copyright:
-  
+<div class="footer-copyright text-center py-3">
+  Copyright© JC Swat <span class="currentYear"></span>
 </div>
 <!-- Copyright -->
 

@@ -60,7 +60,9 @@
       <p class="mt-5">
       One of the world's premier academic and research institutions, the Jonathan Carroll University has driven new ways of thinking since our 1876 founding. Today, JCU is an intellectual destination that draws inspired scholars to our Hyde Park and international campuses, keeping JCU at the nexus of ideas that challenge and change the world.
       </p>
-      <button type="button" class="btn btn-pr">Explore <i class="fas fa-arrow-right"></i></button>
+      <a href="index.php?page=about">
+        <button type="button" class="btn btn-pr2"> Explore &nbsp;<i class="fas fa-arrow-right"></i></button>
+      </a>
     </div>
     <div class="col-md-4">
       <div class="fewWordsLogo px-5">

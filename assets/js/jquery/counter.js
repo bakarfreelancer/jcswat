@@ -1,1 +1,1 @@
-$('.stasticsCount').counterUp({ delay: 10, time: 1000 });
+($('.stasticsCount').counterUp({ delay: 10, time: 1000 }));

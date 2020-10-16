@@ -43,25 +43,45 @@ a:hover{
 /* buttons */
 
 /* primary Button */
+.btn-pr,
+.btn-pr2{
+  text-transform: uppercase;
+  letter-spacing: .6px;
+  font-weight: 500;
+  box-shadow: none;
+  transition: all 0.3s;
+}
+.btn-pr2:enabled,
+.btn-pr:enabled{
+  box-shadow: none;
+}
 
 .btn-pr{
   background: var(--primary-color);
   color: #fff;
-text-transform: uppercase;
-letter-spacing: .6px;
-font-weight: 500;
-box-shadow: none;
-transition: all 0.3s;
 }
 
-.btn-pr:enabled{
-  box-shadow: none;
-}
+.btn-pr2:hover,
+.btn-pr2:active,
 .btn-pr:active,
 .btn-pr:hover{
-  background: var(--primary-hover-color);
   box-shadow: none;
   color: #fff;
+}
+.btn-pr:hover{
+  background: var(--primary-hover-color);
+}
+
+/* button with primary border and white background */
+.btn-pr2{
+  background: #fff;
+  color: var(--primary-color);
+border: solid var(--primary-color) 2px;
+}
+
+.btn-pr2:active,
+.btn-pr2:hover{
+  background: var(--primary-color);
 }
 
 
@@ -174,6 +194,9 @@ nav{
   padding: 20px 0;
   color: var(--primary-color);
 }
+.newsPostDateText{
+  font-size: 90%;
+}
 .newsPostDate{
   font-style: italic;
 }
@@ -188,9 +211,20 @@ nav{
 
 /* footer */
 .page-footer{
-  background-color: rgb(126, 126, 126) ;
-  color: rgb(255, 255, 255);
-  padding-bottom: 5px;
+  background-color: #333;
+  color: #bcbec0;
+}
+.page-footer a{
+  color: #bcbec0;
+  border-bottom:#bcbec000 solid 2px;
+}
+.page-footer a:hover{
+  color: #86888a;
+  border-bottom: #86888a solid 2px;
+}
+.footer-copyright{
+  background-color: #212121;
+  color: #fff;
 }
 
 

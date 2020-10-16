@@ -15,7 +15,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <!-- JQUERY WAYPOINTS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-
+    <!-- CUSTOM JS MAIN.JS -->
+    <script src="assets/js/main.js"></script>
 
     <title>JC Swat</title>
 </head>
