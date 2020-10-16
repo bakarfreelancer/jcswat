@@ -31,6 +31,40 @@
   background-color: var(--primary-color);
 }
 
+/* links */
+a{
+  color: var(--primary-color);
+  transition: all 0.3s;
+}
+a:hover{
+  color: var(--primary-hover-color);
+  text-decoration: none;
+}
+/* buttons */
+
+/* primary Button */
+
+.btn-pr{
+  background: var(--primary-color);
+  color: #fff;
+text-transform: uppercase;
+letter-spacing: .6px;
+font-weight: 500;
+box-shadow: none;
+transition: all 0.3s;
+}
+
+.btn-pr:enabled{
+  box-shadow: none;
+}
+.btn-pr:active,
+.btn-pr:hover{
+  background: var(--primary-hover-color);
+  box-shadow: none;
+  color: #fff;
+}
+
+
 
 /* navigation bar */
 nav{
@@ -123,11 +157,39 @@ nav{
   font-size: 130%;
 }
 
+/* news posts */
+.singlePostDiv{
+  background-color: rgb(237, 237, 237);
+  margin: 50px 0 40px 0;
+  border-radius: 15px;
+}
+.newsPostTextDiv{
+  padding: 5px 12px 20px 12px;
+}
+.postImg img{
+  width: 100%;
+}
+.newsPostTitle{
+  font-size: 140%;
+  padding: 20px 0;
+  color: var(--primary-color);
+}
+.newsPostDate{
+  font-style: italic;
+}
+.newsPostDate i{
+  font-size: 150%;
+  padding-right: 10px;
+  color: var(--primary-color);
+}
+.newsPostDate{
+  /* padding-bottom: 50px; */
+}
 
 /* footer */
 .page-footer{
   background-color: rgb(126, 126, 126) ;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   padding-bottom: 5px;
 }
 
@@ -147,11 +209,13 @@ nav{
 
  /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
+
   .logo{
     max-width: 180px;
   }
   .navbar-toggler-icon{
     font-size: 70%;
   }
+
 }
 

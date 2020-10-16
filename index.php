@@ -32,7 +32,7 @@ if(isset($_GET['page'])){
         include 'includes/pages/'.$page_name.'.inc.php';
 
     }else{
-        include 'includes/pages/notfound.inc.php';
+        include 'includes/pages/notfound.inc.php';  
     }
 }else{
     include 'includes/pages/home.inc.php';

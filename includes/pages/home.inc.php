@@ -60,6 +60,7 @@
       <p class="mt-5">
       One of the world's premier academic and research institutions, the Jonathan Carroll University has driven new ways of thinking since our 1876 founding. Today, JCU is an intellectual destination that draws inspired scholars to our Hyde Park and international campuses, keeping JCU at the nexus of ideas that challenge and change the world.
       </p>
+      <button type="button" class="btn btn-pr">Explore <i class="fas fa-arrow-right"></i></button>
     </div>
     <div class="col-md-4">
       <div class="fewWordsLogo px-5">
@@ -135,3 +136,60 @@
   <div class="spacer"></div>
 </div>
 <!-- stastics end -->
+
+<!-- latest news start -->
+<div class="container-fluid">
+  <div class="spacer"></div>
+  <div class="container text-center latestNews">
+    <h2>Latest News</h2>
+    <hr class="smallLinePr ml-auto mr-auto">
+    <div class="row">
+      <div class="col-md-4 ">
+        <div class="singlePostDiv">
+           <div class="postImg">
+          <img src="assets/images/postimg1.jpg" alt="post1">
+        </div>
+        <div class="newsPostTextDiv">
+           <h6 class="newsPostTitle"><a href="#">Liberal Arts Colleges Rankings</a></h6>
+        <p class="newsPostParagraph text-left">Liberal Arts Colleges emphasize undergraduate education and award at least half of their degrees in the liberal arts fields of study.</p>
+          <div class="newsPostDate text-left">
+            <i class="fas fa-calendar-alt"></i>&nbsp;<span class="newsPostDateText"><span id="newsPostDate">2</span> days ago</span>
+          </div>
+        </div>
+       
+        </div> 
+      </div>
+      <div class="col-md-4 ">
+        <div class="singlePostDiv">
+           <div class="postImg">
+          <img src="assets/images/postimg2.jpg" alt="post1">
+        </div>
+        <div class="newsPostTextDiv">
+          <h6 class="newsPostTitle"><a href="#">10 Law Schools Where the Most Accepted Students Enroll</a></h6>
+        <p class="newsPostParagraph text-left">At these schools, at least 42 percent of accepted students enrolled in fall 2019. News data show.</p>
+          <div class="newsPostDate text-left">
+            <i class="fas fa-calendar-alt"></i>&nbsp;<span class="newsPostDateText"><span id="newsPostDate">13</span> days ago</span>
+          </div>
+        </div> 
+        </div> 
+      </div>
+      <div class="col-md-4 ">
+        <div class="singlePostDiv">
+           <div class="postImg">
+            <img src="assets/images/postimg3.jpg" alt="post1">
+          </div>
+          <div class="newsPostTextDiv">
+             <h6 class="newsPostTitle"><a href="#">5 Ways to Pay for Community College</a></h6>
+         <p class="newsPostParagraph text-left">Many community colleges offer promise programs, which offer tuition-free awards to eligible students.</p>
+          <div class="newsPostDate text-left">
+            <i class="fas fa-calendar-alt"></i>&nbsp;<span class="newsPostDateText"><span id="newsPostDate">5</span> days ago</span>
+          </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+  <div class="spacer"></div>
+</div>
+
+<!-- latest news end -->
