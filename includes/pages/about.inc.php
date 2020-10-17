@@ -60,7 +60,7 @@
         </div>
         <div class='col-md-9'>
             <h3 class=''>wali of swat</h3>
-            <p>His Highness, Miangul Abdul Haq Jahanzeb, the former ruler of Swat state, built a lot of schools in every corner of his domain, including the erection of the building of Jahanzeb College in 1952. The buildings of Jahanzeb College can be seen in clusters sprawling on both sides of the road that links Mingora and Saidu Sharif.  </p>
+            <p>His Highness, Miangul Abdul Haq Jahanzeb, the former ruler of Swat state, built a lot of schools in every corner of his domain, including the erection of the building of Jahanzeb College in 1952. The buildings of Jahanzeb College can be seen in clusters sprawling on both sides of the road that links Mingora Saidu Sharif.  </p>
         </div>
     </div>
         <!-- row 2 close -->
