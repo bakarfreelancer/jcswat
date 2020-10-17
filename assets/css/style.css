@@ -210,9 +210,43 @@ nav{
   padding-right: 10px;
   color: var(--primary-color);
 }
-.newsPostDate{
-  /* padding-bottom: 50px; */
+
+/* contactPage */
+
+.contact {
+  /* background: url("./images/contactbg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
+.contactForm {
+  background: #dfdfdfcc;
+  padding: 30px 20px;
+  border-radius: 25px;
+}
+.contactTag {
+  /* background: #33803f; */
+  padding: 3px;
+}
+.contactForm label {
+  color: var(--primary-color);
+}
+.callIcon {
+  color: var(--primary-color);
+  border: var(--primary-color) solid 3px;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 500%;
+  line-height: 10.4px;
+  padding: 30px;
+  background-color: rgba(239, 187, 108, 0);
+  margin: auto;
+}
+.contactFirstSec {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 
 /* footer */
 .page-footer{
