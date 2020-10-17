@@ -31,6 +31,11 @@
   background-color: var(--primary-color);
 }
 
+/* headings */
+h1,h2,h3,h4,h5,h6{
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
 /* links */
 a{
   color: var(--primary-color);

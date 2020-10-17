@@ -47,7 +47,7 @@
     </a>
     </div>
 </header>
-<!-- heasder ends -->
+<!-- header ends -->
 
 <!-- a few lines about college starts-->
 <div class="container mt-5 mb-5">

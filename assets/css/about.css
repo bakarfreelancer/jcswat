@@ -3,10 +3,3 @@
     --primary-color: #33803f;
     --primary-hover-color: #07300d;
 }
-.headings{
-    color: var(--primary-color);
-    text-transform: uppercase;
-}
-.paragraphs{
-    font-size: 12px;
-}
