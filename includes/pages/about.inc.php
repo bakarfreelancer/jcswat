@@ -32,7 +32,7 @@
 
     <div class="row">
     <!-- row 1 open -->
-        <div class='col-md-6'>
+        <div class='col-md-6 aboutVideo'>
             <!-- video column open -->
             <iframe width="560" height="315" src="https://www.youtube.com/embed/o4kj82SJdc8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>

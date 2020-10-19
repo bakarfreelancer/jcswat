@@ -33,3 +33,6 @@
     background-color: var(--primary-color);
     height: 350px;
 }
+.aboutVideo iframe{
+    max-width: 100%;
+}
