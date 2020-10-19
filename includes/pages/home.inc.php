@@ -195,3 +195,10 @@
 </div>
 
 <!-- latest news end -->
+<!-- news notification start -->
+  
+
+
+
+
+<!-- news notification end -->
