@@ -278,6 +278,7 @@ nav{
 /* news notification button */
 .newsButtonParent {
   left: -03%;
+  /* bottom: 100px; */
   overflow: hidden;
 }
 
@@ -367,6 +368,9 @@ nav{
   }
 
   /* news Notificaton button  */
+  .newsButtonParent{
+    bottom: 100px !important;
+  }
   .circle {
     width: 40px;
     height: 40px;
