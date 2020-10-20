@@ -303,7 +303,11 @@ nav{
   height: 50px;
   background-color: rgba(248, 248, 248, 0);
   border: #ffc420 2px solid;
-  border-radius: 50%;
+  /* border-radius: 50%; */
+  border-top-left-radius: 50px;
+border-top-right-radius: 50px;
+border-bottom-left-radius: 50px;
+border-bottom-right-radius: 50px;
   box-sizing: border-box;
   animation: glo 1.2s infinite;
   animation-direction: initial;
