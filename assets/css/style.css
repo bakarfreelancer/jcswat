@@ -373,7 +373,7 @@ border-bottom-right-radius: 50px;
 
   /* news Notificaton button  */
   .newsButtonParent{
-    bottom: 100px !important;
+    /* bottom: 100px !important; */
   }
   .circle {
     width: 40px;
