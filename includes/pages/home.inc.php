@@ -195,3 +195,45 @@
 </div>
 
 <!-- latest news end -->
+
+<!-- news notification starts -->
+<div>
+   <!-- Button trigger modal -->
+   <div class="newsButtonParent fixed-bottom">
+        <div class="circleBorder">
+            <div type="button" class="circle" data-toggle="modal" data-target="#staticBackdrop">
+                News
+            </div>
+        </div>
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Latest News</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="width:100%" >
+            <div class= "marQuee">
+                <p>Upcomming sports events</p>
+                <p>Result announced for spring exam</p>
+                <p>College trip to Kalam</p>
+                <p>Welcome party for new students</p>
+                <p>Classes starts</p>
+                <p>Blood camp on sunday</p>
+            </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+        <button type="button" class="btn btn-pr">More</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- news notification end -->

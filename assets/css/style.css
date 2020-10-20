@@ -30,6 +30,9 @@
 .bg-pr{
   background-color: var(--primary-color);
 }
+body{
+  position: relative;
+}
 
 /* headings */
 h1,h2,h3,h4,h5,h6{
@@ -247,6 +250,79 @@ nav{
   margin-bottom: 50px;
 }
 
+/* news notification */
+.marQuee{
+  width: relative;
+  display: inline block;
+  position: relative;
+  animation: myani 12s infinite;
+  animation-timing-function: linear;
+  animation-direction: initial;
+}
+.marQuee:hover{
+  animation-play-state: paused;
+}
+@keyframes myani{
+
+  0%{
+      bottom: -270px;
+  }
+  100%{
+      bottom: 298px;  
+  }
+}
+.modal-body{
+  overflow: hidden;
+}
+
+/* news notification button */
+.newsButtonParent {
+  left: -03%;
+  overflow: hidden;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  background-color: var(--primary-color);
+  border-radius: 50px;
+  text-align: center;
+  padding: 20px 0;
+  color: #fff;
+  margin: 0;
+  box-sizing: border-box;
+  position: absolute;
+  top: 48px;
+  left: 48px;
+
+}
+
+.circleBorder {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(248, 248, 248, 0);
+  border: #ffc420 2px solid;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: glo 1.2s infinite;
+  animation-direction: initial;
+  animation-timing-function: linear;
+
+}
+
+@keyframes glo {
+  0% {
+      padding: 27px;
+      margin: 49px;
+  }
+
+  100% {
+      padding: 36px;
+      margin: 40px;
+  }
+}
+
+
 
 /* footer */
 .page-footer{
@@ -289,6 +365,35 @@ nav{
   .navbar-toggler-icon{
     font-size: 70%;
   }
+
+  /* news Notificaton button  */
+  .circle {
+    width: 40px;
+    height: 40px;
+    padding: 9px 0;
+    margin: 0;
+    top: 28px;
+    left: 28px;
+
+}
+
+.circleBorder {
+    width: 20px;
+    height: 20px;
+
+}
+
+@keyframes glo {
+    0% {
+        padding: 20px;
+        margin: 26px;
+    }
+
+    100% {
+        padding: 26px;
+        margin: 20px;
+    }
+}
 
 }
 
