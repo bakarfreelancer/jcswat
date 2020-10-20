@@ -303,15 +303,12 @@ nav{
   height: 50px;
   background-color: rgba(248, 248, 248, 0);
   border: #ffc420 2px solid;
-  /* border-radius: 50%; */
-  border-top-left-radius: 50px;
-border-top-right-radius: 50px;
-border-bottom-left-radius: 50px;
-border-bottom-right-radius: 50px;
+  border-radius: 50%;
   box-sizing: border-box;
   animation: glo 1.2s infinite;
   animation-direction: initial;
   animation-timing-function: linear;
+  border-collapse: separate;
 
 }
 
@@ -372,9 +369,7 @@ border-bottom-right-radius: 50px;
   }
 
   /* news Notificaton button  */
-  .newsButtonParent{
-    /* bottom: 100px !important; */
-  }
+
   .circle {
     width: 40px;
     height: 40px;
@@ -388,6 +383,10 @@ border-bottom-right-radius: 50px;
 .circleBorder {
     width: 20px;
     height: 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 
 }
 
