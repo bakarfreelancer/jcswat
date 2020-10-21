@@ -25,7 +25,6 @@
   border-color: #fff;
   margin: 25px auto 15px 0;
 }
-
 /* background primary color */
 .bg-pr{
   background-color: var(--primary-color);
@@ -262,6 +261,7 @@ nav{
 .marQuee:hover{
   animation-play-state: paused;
 }
+
 @keyframes myani{
 
   0%{
@@ -278,7 +278,7 @@ nav{
 /* news notification button */
 .newsButtonParent {
   left: -03%;
-  /* bottom: 100px; */
+  max-width: fit-content;
   overflow: hidden;
 }
 
@@ -324,6 +324,19 @@ nav{
   }
 }
 
+/* Users page */
+.user{
+  padding: 30px;
+  background-color: #eee;
+  border-radius: 25px;
+}
+.loginDiv{
+  border-right: solid 3px var(--primary-color);
+}
+.loginDiv,
+.signupDiv{
+  padding: 10px 25px;
+}
 
 
 /* footer */
@@ -356,7 +369,13 @@ nav{
 @media (max-width: 991.98px) { }
 
  /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {  }
+@media (max-width: 767.98px) {
+  /* users   */
+  .loginDiv{
+    border-bottom: solid 3px var(--primary-color);
+    border-right:none;
+  } 
+}
 
  /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 

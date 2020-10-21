@@ -27,8 +27,7 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="index.php?page=contact"><i class="fas fa-phone-square-alt"></i> Contact</a>
-      </li>
-      
+      </li>     
     </ul>
   </div>
   </div>
