@@ -378,7 +378,14 @@ nav{
 }
 
  /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) {
+  /* global  */
+  .smd-none{
+    display: none;
+  }
+  .spacer{
+    height: 25px;
+  }
 
   .logo{
     max-width: 180px;
