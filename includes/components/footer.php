@@ -88,27 +88,33 @@
 
     <!-- Grid column -->
     <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
-
-      <!-- Social buttons -->
-      <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
-
-      <!-- Facebook -->
-      <a type="button" class="btn-floating btn-fb">
-      <i class="fab fa-facebook"></i>
-      </a>
-      <!-- Twitter -->
-      <a type="button" class="btn-floating btn-tw">
-      <i class="fab fa-facebook"></i>
-      </a>
-      <!-- Google +-->
-      <a type="button" class="btn-floating btn-gplus">
-        <i class="fab fa-google-plus-g"></i>
-      </a>
-      <!-- Dribbble -->
-      <a type="button" class="btn-floating btn-dribbble">
-        <i class="fab fa-dribbble"></i>
-      </a>
-
+       <!-- Social buttons -->
+      <h5 class="font-weight-bold text-uppercase mb-4">stay connect</h5>
+      <div class="footerSocialIcons">
+        <!-- Facebook -->
+        <a type="button" class="btn-floating btn-fb">
+        <i class="fab fa-facebook"></i>
+        </a>
+        <!-- Twitter -->
+        <a type="button" class="btn-floating btn-yt">
+        <i class="fab fa-youtube"></i>
+        </a>
+        <!-- Google +-->
+        <a type="button" class="btn-floating btn-github" href="https://github.com/bakarfreelancer/jcswat" target="_blank">
+        <i class="fab fa-github"></i>
+        </a>
+        <!-- Dribbble -->
+        <!-- <a type="button" class="btn-floating btn-dribbble">
+          <i class="fab fa-dribbble"></i>
+        </a> -->
+      </div>
+      <h6 class="text-left mt-2 newsLetterHeading">News letter</h6>
+      <div class="footerNewsLetter">
+        <form action="">
+          <input type="email" placeholder="user@mail.com">
+          <input type="submit" value="Subscribe" class="btn-pr">
+        </form>   
+      </div>
     </div>
     <!-- Grid column -->
 

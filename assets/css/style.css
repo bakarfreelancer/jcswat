@@ -38,6 +38,9 @@ h1,h2,h3,h4,h5,h6{
   color: var(--primary-color);
   text-transform: uppercase;
 }
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6{
+  color: #fff;
+}
 /* links */
 a{
   color: var(--primary-color);
@@ -356,7 +359,30 @@ nav{
   background-color: #212121;
   color: #fff;
 }
-
+.footerSocialIcons{
+  font-size: 200%;
+}
+.footerSocialIcons a:hover{
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+.footerSocialIcons .btn-fb:hover{
+  color: #3b5998;
+}
+.footerSocialIcons .btn-yt:hover{
+  color: #FF0000;
+}
+.footerSocialIcons .btn-github:hover{
+  color: #fff;
+}
+.footerNewsLetter input{
+  width: 100%;
+  padding: 2px 4px;
+  margin: 4px;
+  border-radius: 5px;
+}
+.footerNewsLetter input[type=submit]{
+  border: none;
+}
 
 
 
@@ -426,6 +452,16 @@ nav{
         padding: 26px;
         margin: 20px;
     }
+}
+
+/* footer */
+.newsLetterHeading{
+  text-align: center !important;
+}
+.footerNewsLetter input{
+  width: 80%;
+  padding: 2px;
+  margin: 4px;
 }
 
 }
