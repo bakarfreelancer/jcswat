@@ -9,7 +9,7 @@
       <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
         <div class="carousel-item active" style="background-image: url('assets/images/slider1.jpg')">
-          <div class="carousel-caption d-none d-md-block jumbotron slidercontent">
+          <div class="carousel-caption d-md-block jumbotron slidercontent">
             <h2 class="display-4">Lorem Ipsum</h2>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore.</p>
@@ -17,7 +17,7 @@
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('assets/images/slider2.jpg')">
-          <div class="carousel-caption d-none d-md-block jumbotron slidercontent">
+          <div class="carousel-caption d-md-block jumbotron slidercontent">
             <h2 class="display-4">Lorem Ipsum</h2>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore.</p>
@@ -25,7 +25,7 @@
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('assets/images/slider3.jpg')">
-            <div class="carousel-caption d-none d-md-block jumbotron slidercontent">
+            <div class="carousel-caption d-md-block jumbotron slidercontent">
               <h2 class="display-4">
                 Lorem Ipsum
               </h2>

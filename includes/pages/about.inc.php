@@ -80,20 +80,20 @@
   <div class="carousel-inner">
     <div class="carousel-item active aboutSlider">
      
-      <div class="carousel-caption d-none d-md-block slidertext">
+      <div class="carousel-caption d-md-block slidertext">
         <h5>First slide label</h5>
         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
       </div>
     </div>
     <div class="carousel-item aboutSlider">
       
-      <div class="carousel-caption d-none d-md-block slidertext">
+      <div class="carousel-caption d-md-block slidertext">
         <h5>Second slide label</h5>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
     </div>
     <div class="carousel-item aboutSlider">
-           <div class="carousel-caption d-none d-md-block slidertext">
+           <div class="carousel-caption d-md-block slidertext">
         <h5>Third slide label</h5>
         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
       </div>
