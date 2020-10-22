@@ -46,6 +46,8 @@ include './includes/components/footer.php'; //Iclude footer file
 ?>
 <!-- CUSTOM FILES -->
 <script rel="text/javascript" src="assets/js/jquery/counter.js"></script>
+<!-- HOVER DROPDOWN -->
+<script rel="text/javascript" src="assets/js/jquery/dropdown.js"></script>
 
 <!-- BOOTSTRAP JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
