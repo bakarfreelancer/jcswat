@@ -3,6 +3,21 @@
 <div class="spacer"></div>
 <div class="container">
     <div class="user col-md-10 mx-auto">
+    <!-- Success register Message -->
+    <?php
+    // if(in_array('signup success',$error)){
+    if(isset($successSignUp)){
+       echo '<div>
+            <div class="alert alert-success" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+                <h4 class="alert-heading">SignUp Success !</h4>
+                <p>Now login to your account</p>
+            </div>
+        </div>';
+    }
+    ?>
         <div class="row">
         <!-- login -->
         <div class="col-md-6 loginDiv">

@@ -33,6 +33,9 @@ body{
   position: relative;
 }
 
+.hide{
+  display: none;
+}
 /* headings */
 h1,h2,h3,h4,h5,h6{
   color: var(--primary-color);
@@ -134,12 +137,6 @@ nav{
 .slidercontent > h2 {
   color: #fff;
 }
-.sliderNavigators {
-  margin-top: 320px;
-}
-.sliderNavigators > span {
-  transform: translateY(-120px);
-}
 
 /* Few words about college */
 .fewWordsLogo img{
@@ -217,13 +214,6 @@ nav{
 }
 
 /* contactPage */
-
-.contact {
-  /* background: url("./images/contactbg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
-}
 .contactForm {
   background: #dfdfdfcc;
   padding: 30px 20px;
@@ -341,6 +331,11 @@ nav{
   padding: 10px 25px;
 }
 
+/* admin Topbar */
+.adminTopBar{
+  display: block;
+  background-color: #3b5998;
+}
 
 /* footer */
 .page-footer{
