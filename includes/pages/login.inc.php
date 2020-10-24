@@ -1,3 +1,10 @@
+<?php
+if(isset($_SESSION['role'])){
+    if($_SESSION['role'] == 'admin')
+    header('Location: dashboard.php');
+    else header('Location: index.php');
+}
+?>
 <div class="spacer"></div>
 <div class="spacer"></div>
 <div class="spacer"></div>
@@ -5,8 +12,30 @@
     <div class="user col-md-10 mx-auto">
     <!-- Success register Message -->
     <?php
-    // if(in_array('signup success',$error)){
-    if(isset($successSignUp)){
+    if(isset($loginSuccess)){ //FAILED LOGIN MESSAGE
+        echo '<div>
+            <div class="alert alert-danger" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+                <h6 class="alert-heading">Email or password is incorrect !</h6>
+            </div>
+        </div>';
+    }
+
+    if(isset($notActive)){ //DISABLED ACCOUNT MESSAGE
+        echo '<div>
+            <div class="alert alert-danger" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+                <h6 class="alert-heading">your account is disabled !</h6>
+                <p>Contact admin for activation of account</p>
+            </div>
+        </div>';
+    }
+
+    if(isset($successSignUp)){ //SUCCESS SIGNUP MESSAGE
        echo '<div>
             <div class="alert alert-success" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -22,11 +51,11 @@
         <!-- login -->
         <div class="col-md-6 loginDiv">
             <h3 class="text-center pb-2">login</h3>
-                <form class="needs-validation loginForm" action="index.php?page=contact" novalidate>
+                <form class="needs-validation loginForm" method="POST" action="index.php?page=login" novalidate>
                     <div class="form-row">
                         <div class="col-md-12 mb-3">
                             <label for="validationCustom03">Email</label>
-                            <input type="email" class="form-control" id="validationCustomEmail" placeholder="user@mail.com"
+                            <input type="email" class="form-control" id="log_email" name="log_email" placeholder="user@mail.com"
                             required>
                             <div class="invalid-feedback">
                                 Please provide correct email.
@@ -36,14 +65,14 @@
                     <div class="form-row">
                         <div class="col-md-12 mb-3">
                             <label for="validationCustom03">Password</label>
-                            <input type="password" class="form-control" id="" placeholder="********"
+                            <input type="password" class="form-control" id="log_pass" name="log_pass" placeholder="********"
                             required>
                             <div class="invalid-feedback">
                                 Please enter password.
                             </div>
                         </div>
                     </div>
-                    <button class="btn btn-block btn-pr" type="submit">Login <i class="fas fa-sign-in-alt"></i></button>
+                    <button class="btn btn-block btn-pr" type="submit" name="login">Login <i class="fas fa-sign-in-alt"></i></button>
                 </form>
                 <div class="resetPassword py-3 text-right">
                 <a href="#">ForgotPassword ?</a>

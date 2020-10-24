@@ -49,7 +49,6 @@ if(isset($_POST['register'])){
 		$_SESSION['last_name'] = "";
         $_SESSION['r_email'] = "";
         
-        // array_push($error, 'signup success');
         $successSignUp=true;
         // header("Location: index.php?page=login");
         

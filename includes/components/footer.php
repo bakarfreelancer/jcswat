@@ -44,11 +44,14 @@
             <a href="#">DEPARTMENTS</a>
           </p>
         </li>
-        <li>
+        <?php
+        if(!isset($_SESSION['role']))
+        echo '<li>
           <p>
             <a href="index.php?page=login">LOGIN</a>
           </p>
-        </li>
+        </li>';
+        ?>
       </ul>
 
     </div>

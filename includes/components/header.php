@@ -27,8 +27,53 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="index.php?page=contact"><i class="fas fa-phone-square-alt"></i> Contact</a>
-      </li>     
-    </ul>
+      </li> 
+      <!-- login users     -->
+      <?php
+      if(isset($_SESSION['role'])){
+        echo '<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i> '.$_SESSION['first_name'].'</a>';
+      }else{
+        echo '<li class="nav-item">
+        <a class="nav-link" href="index.php?page=login"><i class="fas fa-sign-in-alt"></i> Login</a>
+      </li>';
+      }
+      if(isset($_SESSION['role'])){
+        if($_SESSION['role'] == 'admin'){
+          echo ' <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="dashboard.php"><i class="fas fa-tachometer-alt"></i> Dashboard</a>';
+        }else{
+          echo '<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="profile.php"><i class="fas fa-id-card"></i> Profile</a>';
+        }
+      }
+        if(isset($_SESSION['role'])){
+          echo '<a class="dropdown-item" href="#"><span class="text-danger" data-toggle="modal" data-target="#logoutModal" ><i class="fas fa-sign-out-alt"></i> Log Out</span></a>
+          </div>
+        </li>';
+        }
+        ?>
+        </ul>
   </div>
   </div>
 </nav>
+<!-- Logout Modal -->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-danger" id="exampleModalLabel">LOGOUT?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Do you want to logout?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-pr" data-dismiss="modal">NO</button>
+        <button type="button" class="btn btn-danger"><a href="index.php?page=logout"><span class="text-white">YES LOGOUT</span></a></button>
+      </div>
+    </div>
+  </div>
+</div>
