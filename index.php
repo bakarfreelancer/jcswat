@@ -1,3 +1,8 @@
+<?php
+require 'config/config.php';
+require 'includes/form_handlers/register_handler.php';
+require 'includes/form_handlers/login_handler.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
