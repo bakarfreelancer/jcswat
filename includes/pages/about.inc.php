@@ -32,7 +32,7 @@
 
     <div class="row">
     <!-- row 1 open -->
-        <div class='col-md-6'>
+        <div class='col-md-6 aboutVideo'>
             <!-- video column open -->
             <iframe width="560" height="315" src="https://www.youtube.com/embed/o4kj82SJdc8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -80,20 +80,20 @@
   <div class="carousel-inner">
     <div class="carousel-item active aboutSlider">
      
-      <div class="carousel-caption d-none d-md-block slidertext">
+      <div class="carousel-caption d-md-block slidertext">
         <h5>First slide label</h5>
         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
       </div>
     </div>
     <div class="carousel-item aboutSlider">
       
-      <div class="carousel-caption d-none d-md-block slidertext">
+      <div class="carousel-caption d-md-block slidertext">
         <h5>Second slide label</h5>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
     </div>
     <div class="carousel-item aboutSlider">
-           <div class="carousel-caption d-none d-md-block slidertext">
+           <div class="carousel-caption d-md-block slidertext">
         <h5>Third slide label</h5>
         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
       </div>

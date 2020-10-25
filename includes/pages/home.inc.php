@@ -9,7 +9,7 @@
       <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
         <div class="carousel-item active" style="background-image: url('assets/images/slider1.jpg')">
-          <div class="carousel-caption d-none d-md-block jumbotron slidercontent">
+          <div class="carousel-caption d-md-block jumbotron slidercontent">
             <h2 class="display-4">Lorem Ipsum</h2>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore.</p>
@@ -17,7 +17,7 @@
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('assets/images/slider2.jpg')">
-          <div class="carousel-caption d-none d-md-block jumbotron slidercontent">
+          <div class="carousel-caption d-md-block jumbotron slidercontent">
             <h2 class="display-4">Lorem Ipsum</h2>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore.</p>
@@ -25,7 +25,7 @@
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('assets/images/slider3.jpg')">
-            <div class="carousel-caption d-none d-md-block jumbotron slidercontent">
+            <div class="carousel-caption d-md-block jumbotron slidercontent">
               <h2 class="display-4">
                 Lorem Ipsum
               </h2>
@@ -37,11 +37,11 @@
       </div>
     </div>
     <div>
-    <a class="carousel-control-prev sliderNavigators" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <a class="carousel-control-prev sliderNavigators smd-none" href="#carouselExampleIndicators" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next sliderNavigators" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <a class="carousel-control-next sliderNavigators smd-none" href="#carouselExampleIndicators" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
@@ -195,10 +195,45 @@
 </div>
 
 <!-- latest news end -->
-<!-- news notification start -->
-  
 
+<!-- news notification starts -->
+<div>
+   <!-- Button trigger modal -->
+   <div class="newsButtonParent fixed-bottom">
+        <div class="circleBorder">
+            <div type="button" class="circle" data-toggle="modal" data-target="#staticBackdrop">
+                News
+            </div>
+        </div>
+    </div>
 
-
-
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Latest News</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="width:100%" >
+            <div class= "marQuee">
+                <p>Upcomming sports events</p>
+                <p>Result announced for spring exam</p>
+                <p>College trip to Kalam</p>
+                <p>Welcome party for new students</p>
+                <p>Classes starts</p>
+                <p>Blood camp on sunday</p>
+            </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+        <button type="button" class="btn btn-pr">More</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 <!-- news notification end -->
