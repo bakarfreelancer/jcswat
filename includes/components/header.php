@@ -15,7 +15,7 @@
           Departments
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Computer Science</a>
+          <a class="dropdown-item" href="index.php?page=csdept">Computer Science</a>
           <a class="dropdown-item" href="#">Urdu</a>
           <a class="dropdown-item" href="#">Statistics</a>
           <a class="dropdown-item" href="#">English</a>
