@@ -41,3 +41,9 @@
 .membersTable tr .delete{
     width: 100px;
 }
+
+/* delete member */
+.beforeDeleteInfo p{
+    font-size: 130%;
+    color: var(--primary-color);
+}

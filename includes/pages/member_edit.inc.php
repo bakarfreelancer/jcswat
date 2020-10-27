@@ -8,8 +8,7 @@ $member_data = mysqli_fetch_array($member_query);
 }
 ?>
 <div class="contaner-fluid">
-    <h3 class="text-center">Edit Member details</h3>
-    <div class="spacer"></div>
+    <h3 class="text-center my-4">Edit Member details</h3>
     <div class="editMember col-md-8 mx-auto">
     <form class="needs-validation editMemberForm contactForm" method="POST" action="dashboard.php?page=members&id=<?php echo $member_data['s_no'];?>" novalidate>
             <div class="form-row">

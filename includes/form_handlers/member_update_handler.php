@@ -1,4 +1,5 @@
 <?php
+$_SESSION['successUpdate'] = 0;
 if(isset($_POST['member_update'])){
     $update_first_name = $_POST['update_first_name'];
     $update_last_name = $_POST['update_last_name'];
@@ -16,7 +17,7 @@ if(isset($_POST['member_update'])){
     ";
     $insert_query= mysqli_query($conn, "UPDATE users SET first_name ='$update_first_name', last_name = '$update_last_name', email = '$update_email', is_active = '$update_status', role = '$update_role' WHERE s_no = '$id'");
     if($insert_query){
-        echo $insert_query;
+        $_SESSION['successUpdate'] = 1;
     }else echo 'not run';
 }
 ?>

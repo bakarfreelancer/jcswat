@@ -191,6 +191,7 @@ if(isset($_GET['page'])){
   <!-- page-content" -->
 </div>
 <!-- CUSTOM FILES -->
+<script rel="text/javascript" src="assets/js/main.js"></script>
 <!-- HOVER DROPDOWN -->
 <script rel="text/javascript" src="assets/js/jquery/dropdown.js"></script>
 <script rel="text/javascript" src="assets/js/jquery/dashboardSidebar.js"></script>

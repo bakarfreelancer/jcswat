@@ -1,5 +1,6 @@
 <?php
 session_start();
+$_SESSION['successDelete'] = 0;
 if(isset($_POST['login'])){
     $email= filter_var($_POST['log_email'], FILTER_SANITIZE_EMAIL); //FILTER EMAIL TO AVOID SQL INJECTION
 
