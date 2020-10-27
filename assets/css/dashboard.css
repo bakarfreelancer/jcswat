@@ -1,3 +1,43 @@
 .dashboardLogo{
     max-width: 200px;
 }
+.dashboardHeader{
+    margin-top: -20px;
+}
+
+/* MEMBERS PAGE */
+.membersTable .tableHeadRow{
+    height: 50px;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+.membersTable tr td{
+    padding: 10px;
+}
+.membersTable tr{
+    border-bottom: 1px solid #e7e7e7;
+}
+.membersTable tr:nth-child(even){
+    background-color: #f7f7f7;
+}
+.membersTable tr th{
+    text-align: center;
+    vertical-align: center;
+}
+.membersTable tr .sno{
+    width: 50px;
+}
+.membersTable tr .name{
+    width: 160px;
+}
+.membersTable tr .email{
+    width: 200px;
+}
+.membersTable tr .status,
+.membersTable tr .role{
+    width: 100px;
+}
+.membersTable tr .edit,
+.membersTable tr .delete{
+    width: 100px;
+}

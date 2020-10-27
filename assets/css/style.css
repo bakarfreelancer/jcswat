@@ -241,6 +241,14 @@ nav{
   margin-top: 50px;
   margin-bottom: 50px;
 }
+.googleMap{
+  height: 400px;
+  width: 100%;
+}
+.googleMap iframe{
+  width: inherit;
+  height: inherit;
+}
 
 /* news notification */
 .marQuee{
