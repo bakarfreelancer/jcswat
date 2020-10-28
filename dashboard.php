@@ -2,6 +2,7 @@
 require 'config/config.php';
 require 'includes/form_handlers/register_handler.php';
 require 'includes/form_handlers/login_handler.php';
+require 'includes/form_handlers/member_update_handler.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,11 +29,8 @@ require 'includes/form_handlers/login_handler.php';
     <title>Dashboard JC Swat</title>
 </head>
 <body>
-<?php
-include './includes/components/dashboard_header.php';
-?>
 <div class="page-wrapper chiller-theme toggled">
-  <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+  <a id="show-sidebar" class="btn btn-sm btn-dark" style="z-index:999;" href="#">
     <i class="fas fa-bars"></i>
   </a>
   <nav id="sidebar" class="sidebar-wrapper">
@@ -98,7 +96,7 @@ include './includes/components/dashboard_header.php';
             </a>
           </li>
           <li>
-          <a href="dashboard.php">
+          <a href="dashboard.php?page=members">
           <i class="fas fa-users"></i>
               <span>Members</span>
             </a>
@@ -162,6 +160,9 @@ include './includes/components/dashboard_header.php';
   </nav>
   <!-- sidebar-wrapper  -->
   <main class="page-content">
+  <?php
+      include './includes/components/dashboard_header.php';
+    ?>
     <div class="container-fluid">
     <?php
 $pages_folder = 'includes/pages';
@@ -181,15 +182,16 @@ if(isset($_GET['page'])){
 }
 ?>
         </div>
+        <?php
+      include './includes/components/dashboard_footer.php'; //Include footer file
+    ?>
       </footer>
     </div>
   </main>
   <!-- page-content" -->
 </div>
-<?php
-include './includes/components/dashboard_footer.php'; //Include footer file
-?>
 <!-- CUSTOM FILES -->
+<script rel="text/javascript" src="assets/js/main.js"></script>
 <!-- HOVER DROPDOWN -->
 <script rel="text/javascript" src="assets/js/jquery/dropdown.js"></script>
 <script rel="text/javascript" src="assets/js/jquery/dashboardSidebar.js"></script>

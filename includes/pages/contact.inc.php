@@ -57,3 +57,8 @@
       </div>
     </div>
   </div>
+
+  <!-- GOOGLE MAP -->
+  <div class="googleMap">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.0041619521567!2d72.35524891498362!3d34.75548798042041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dc22ecfadb30fd%3A0x44a86128ec7eca3a!2sGovt%20Post%20Graduate%20Jehanzeb%20College%20Swat!5e0!3m2!1sen!2s!4v1603616635915!5m2!1sen!2s"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
