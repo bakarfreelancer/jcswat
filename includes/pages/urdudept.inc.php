@@ -1,6 +1,6 @@
 <div class="spacer"></div>
 <div class="spacer"></div>
-<h1 class="text-center">department of computer science</h1>
+<h1 class="text-center">department of urdu</h1>
 <div class="spacer"></div>
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">

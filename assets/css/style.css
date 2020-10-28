@@ -183,6 +183,10 @@ nav{
 .statisticsCountTitle{
   font-size: 130%;
 }
+.csdfont{
+  color: black;
+  font-weight: 300;
+}
 
 /* news posts */
 .singlePostDiv{
@@ -212,7 +216,9 @@ nav{
   padding-right: 10px;
   color: var(--primary-color);
 }
-
+.imgcsd img{
+  max-height:100vh;
+}
 /* contactPage */
 .contactForm {
   background: #dfdfdfcc;

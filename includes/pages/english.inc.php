@@ -1,6 +1,6 @@
 <div class="spacer"></div>
 <div class="spacer"></div>
-<h1 class="text-center">department of computer science</h1>
+<h1 class="text-center">department of english</h1>
 <div class="spacer"></div>
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
@@ -14,8 +14,8 @@
 <div class="container-fluid">
     <div class="container">
         <div class="row">
-            <div class="col-md-4"><img src="./assets/images/yasir..jpg" alt="hodimg">
-                <span class="">HOD:yasir arafat</span>
+            <div class="col-md-4"><img src="./assets/images/hod.jpeg" alt="hodimg">
+                <span class="">HOD:muhammad salim </span>
         </div>
         <div class="col-md-8">
                 <h3>HEAD OF DEPARTMENT</h3>
@@ -32,14 +32,14 @@
       <hr class="smallLineWhite">
       <div class="spacer"></div>
       <div class="row ">
-          <div class="col-md-4"><img src="./assets/images/sfaisal.jpg"" alt="">
-          <div><span class="">assistant prof: shah faisal</span></div>
+          <div class="col-md-4"><img src="./assets/images/isa.jpeg"" alt="">
+          <div><span class="">assistant prof: isa khan</span></div>
           </div>
-          <div class="col-md-4"><img src="./assets/images/ahusain.jpeg" alt="">
-          <div><span class="">assistant prof: ahmad hussain</span></div>
+          <div class="col-md-4"><img src="./assets/images/akhtr.jpeg" alt="">
+          <div><span class="">assistant prof: akhtar munir</span></div>
           </div>
-          <div class="col-md-4"><img src="./assets/images/mhabib.jpg" alt="">
-          <div><span class="">assistant prof: muhammad habib</span></div>
+          <div class="col-md-4"><img src="./assets/images/haider.jpg" alt="">
+          <div><span class="">assistant prof: haider ali</span></div>
           </div>
       </div>
       <div class="spacer"></div>
@@ -52,10 +52,10 @@
       <hr class="smallLineWhite">
       <div class="spacer"></div>
       <div class="row align-center">
-          <div class="col-md-4"><img src="./assets/images/adost.jpg"" alt=""> <div>
-          <span class="">assistant prof: ahmad hussain</span></div></div>
-          <div class="col-md-4"><img src="./assets/images/yunus.jpg" alt="">
-          <div><span class="">assistant prof: ahmad hussain</span></div>
+          <div class="col-md-4"><img src="./assets/images/rohul.jpg"" alt=""> <div>
+          <span class="">assistant prof: rohul amin</span></div></div>
+          <div class="col-md-4"><img src="./assets/images/amjad.jpg" alt="">
+          <div><span class="">assistant prof: muhammad amjad</span></div>
           </div>
           <div class="col-md-4"><img src="./assets/images/yunus.jpg" alt="">
           <div><span class="csdfont">assistant prof: ahmad hussain</span></div></div>
