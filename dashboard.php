@@ -3,6 +3,7 @@ require 'config/config.php';
 require 'includes/form_handlers/register_handler.php';
 require 'includes/form_handlers/login_handler.php';
 require 'includes/form_handlers/member_update_handler.php';
+require 'includes/form_handlers/add_news_handler.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -89,11 +90,21 @@ require 'includes/form_handlers/member_update_handler.php';
               <span>Dashboard</span>
             </a>
           </li>
-          <li>
-          <a href="dashboard.php?page=news">
-          <i class="fas fa-calendar-alt"></i>
-              <span>Events News</span>
+          <li class="sidebar-dropdown">
+            <a href="#">
+            <i class="fas fa-calendar-alt"></i>
+              <span>News</span>
             </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a href="dashboard.php?page=add_news">Add news</a>
+                </li>
+                <li>
+                  <a href="dashboard.php?page=news">View all</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li>
           <a href="dashboard.php?page=members">
@@ -101,28 +112,6 @@ require 'includes/form_handlers/member_update_handler.php';
               <span>Members</span>
             </a>
           </li>
-          <!-- <li class="sidebar-dropdown">
-            <a href="#">
-              <i class="fa fa-shopping-cart"></i>
-              <span>E-commerce</span>
-              <span class="badge badge-pill badge-danger">3</span>
-            </a>
-            <div class="sidebar-submenu">
-              <ul>
-                <li>
-                  <a href="#">Products
-
-                  </a>
-                </li>
-                <li>
-                  <a href="#">Orders</a>
-                </li>
-                <li>
-                  <a href="#">Credit cart</a>
-                </li>
-              </ul>
-            </div>
-          </li> -->
 
           <!---------------------------->
           <!-- <li class="header-menu">
