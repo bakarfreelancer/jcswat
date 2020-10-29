@@ -4,6 +4,7 @@ require 'includes/form_handlers/register_handler.php';
 require 'includes/form_handlers/login_handler.php';
 require 'includes/form_handlers/member_update_handler.php';
 require 'includes/form_handlers/add_news_handler.php';
+require 'includes/form_handlers/update_news_handler.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
