@@ -8,7 +8,13 @@ if(isset($_GET['id'])){
     }
 ?>
 <div class="container-fluid">
-    <h3 class="text-center my-3">News Edit</h3>
+    <div>
+      <span class="text-center my-3 d-block">
+      <a href="dashboard.php?page=news" class="btn btn-pr float-left"><i class="fas fa-arrow-left"></i></a>
+        <h3 class="text-center d-inline-block">edit news</h3>
+      </span>
+    </div>
+    <div>
     <div>
     <form class="needs-validation contactForm col-md-7 mx-auto" action="dashboard.php?page=news&id=<?php echo $newsId; ?>" method="POST" novalidate>
             <div class="form-row">

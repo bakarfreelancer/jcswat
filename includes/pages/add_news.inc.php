@@ -1,6 +1,11 @@
 <div class="container_fluid">
     <div>
-    <h3 class="text-center my-4">Add new news</h3>
+      <span class="text-center my-3 d-block">
+      <a href="dashboard.php?page=news" class="btn btn-pr float-left"><i class="fas fa-arrow-left"></i></a>
+        <h3 class="text-center d-inline-block">add news</h3>
+      </span>
+    </div>
+    <div>
     <form class="needs-validation contactForm col-md-7 mx-auto" action="dashboard.php?page=add_news" method="POST" novalidate>
             <div class="form-row">
               <div class="col-md-12 mb-3">

@@ -22,14 +22,15 @@ if(isset($_POST['member_update'])){
         $self_e_check_array = mysqli_fetch_array($self_e_check);
         if($self_e_check_array['email'] == $update_email){
              $insert_query= mysqli_query($conn, "UPDATE users SET first_name ='$update_first_name', last_name = '$update_last_name', email = '$update_email', is_active = '$update_status', role = '$update_role' WHERE s_no = '$id'");
-            if($insert_query){
-            $_SESSION['successUpdate'] = 1;
-            }else echo 'not run';
+            if($insert_query) $_SESSION['successUpdate'] = 1;
+        }else if($num_rows < 1){
+            $insert_query= mysqli_query($conn, "UPDATE users SET first_name ='$update_first_name', last_name = '$update_last_name', email = '$update_email', is_active = '$update_status', role = '$update_role' WHERE s_no = '$id'");
+            if($insert_query) $_SESSION['successUpdate'] = 1;
         }else{
             $_SESSION['successUpdate'] = 2;
         }
-       
-    }else{
+    }
+    else{
         $_SESSION['successUpdate'] = 2;
     }
 }

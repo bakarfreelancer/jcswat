@@ -8,7 +8,12 @@ $member_data = mysqli_fetch_array($member_query);
 }
 ?>
 <div class="contaner-fluid">
-    <h3 class="text-center my-4">Edit Member details</h3>
+    <div>
+      <span class="text-center my-3 d-block">
+      <a href="dashboard.php?page=members" class="btn btn-pr float-left"><i class="fas fa-arrow-left"></i></a>
+        <h3 class="text-center d-inline-block">EDIT MEMBER DETAILS</h3>
+      </span>
+    </div>
     <div class="editMember col-md-8 mx-auto">
     <form class="needs-validation editMemberForm contactForm" method="POST" action="dashboard.php?page=members&id=<?php echo $member_data['s_no'];?>" novalidate>
             <div class="form-row">

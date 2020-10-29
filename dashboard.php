@@ -97,12 +97,12 @@ require 'includes/form_handlers/update_news_handler.php';
               <span>News</span>
             </a>
             <div class="sidebar-submenu">
-              <ul>
+              <ul class="newsSub">
                 <li>
-                  <a href="dashboard.php?page=add_news">Add news</a>
+                  <a href="dashboard.php?page=add_news"><i class="fas fa-plus"></i> Add news</a>
                 </li>
                 <li>
-                  <a href="dashboard.php?page=news">View all</a>
+                  <a href="dashboard.php?page=news"><i class="fas fa-eye"></i>View all</a>
                 </li>
               </ul>
             </div>

@@ -3,7 +3,10 @@ $get_news_query = mysqli_query($conn, 'SELECT * FROM event_news ORDER BY publish
 ?>
 <div class="container-fluid">
     <div>
-        <h3 class="text-center my-3">News</h3>
+        <span class="text-center my-3 d-block">
+          <h3 class="text-center d-inline-block">News</h3>
+          <a href="dashboard.php?page=add_news" class="btn btn-pr float-right position-absolute addNews">add news <i class="fas fa-plus"></i></a>
+      </span>
     </div>
     <div>
         <?php
@@ -26,7 +29,9 @@ $get_news_query = mysqli_query($conn, 'SELECT * FROM event_news ORDER BY publish
                        echo '</button></h2></div>';
                        echo '<div id="c';
                        echo $row['s_no'];
-                       echo '" class="collapse" data-parent="#news">';
+                       echo '" class="collapse';
+                       if($counter == 1)echo 'show';
+                       echo '" data-parent="#news">';
                        echo '<div class="card-body">';
                        echo $row['news_message'];
                        echo '<div class="mt-3">

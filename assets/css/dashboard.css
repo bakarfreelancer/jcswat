@@ -5,7 +5,16 @@
     margin-top: -20px;
 }
 
+/* dashboard sidebar */
+.newsSub li a:before{
+    content: none !important;
+}
+
 /* MEMBERS PAGE */
+.membersTable{
+    table-layout: fixed;
+    width: 100%;
+}
 .membersTable .tableHeadRow{
     height: 50px;
     color: #fff;
@@ -13,6 +22,7 @@
 }
 .membersTable tr td{
     padding: 10px;
+    overflow: scroll;
 }
 .membersTable tr{
     border-bottom: 1px solid #e7e7e7;
@@ -28,7 +38,7 @@
     width: 50px;
 }
 .membersTable tr .name{
-    width: 160px;
+    width: 140px;
 }
 .membersTable tr .email{
     width: 200px;
@@ -39,7 +49,7 @@
 }
 .membersTable tr .edit,
 .membersTable tr .delete{
-    width: 100px;
+    width: 103px;
 }
 
 /* delete member */
@@ -53,3 +63,4 @@
 .newsTitlediv h2 .btn{
     box-shadow: none;
 }
+.addNews{ right: 60px;}
