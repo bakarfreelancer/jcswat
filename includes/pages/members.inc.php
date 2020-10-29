@@ -8,19 +8,25 @@ $get_members_query = mysqli_query($conn, 'SELECT * FROM users ORDER BY role');
 
     <!-- success member delete alert -->
     <?php
-    if($_SESSION['successDelete'] == 1 || $_SESSION['successUpdate'] == 1){
+    if(isset($_GET['delete'])){
+      if($_GET['delete'] == 'yes'){
         echo '<div class="alert alert-success successDeleteMember" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <strong>';
-        if($_SESSION['successDelete'] == 1){
-            echo 'Deleted!</strong> You have deleted member successfully!';
-            $_SESSION['successDelete'] = 0;
-        }elseif($_SESSION['successUpdate'] == 1){
-            echo 'Updated!</strong> You have updated member data successfully!';
-            $_SESSION['successUpdate'] = 0;
-        }
-    echo '</div>';
+        <strong>Deleted!</strong> You have deleted member successfully!</div>';
+      }
     }
+    if($_SESSION['successUpdate'] == 1){
+        echo '<div class="alert alert-success successDeleteMember" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>Updated!</strong> You have updated member data successfully!</div>';
+        $_SESSION['successUpdate'] = 0;
+    }
+    if($_SESSION['successUpdate'] == 2){
+      echo '<div class="alert alert-danger successDeleteMember" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <strong>Email Exist!</strong> Email already exist!</div>';
+      $_SESSION['successUpdate'] = 0;
+      }
     ?>
         <h2 class="text-center my-4">Members</h2>
         <div style="overflow-x: auto;">
@@ -64,7 +70,7 @@ $get_members_query = mysqli_query($conn, 'SELECT * FROM users ORDER BY role');
         echo "</table>";
         }
         ?>
-        </>
+        </div>
     </div>
 </div>
 <!-- Admin Delete Modal -->

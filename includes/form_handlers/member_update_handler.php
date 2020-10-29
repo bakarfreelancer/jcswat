@@ -15,9 +15,23 @@ if(isset($_POST['member_update'])){
                 role = '$update_role',
                 WHERE s_no = '$id'
     ";
-    $insert_query= mysqli_query($conn, "UPDATE users SET first_name ='$update_first_name', last_name = '$update_last_name', email = '$update_email', is_active = '$update_status', role = '$update_role' WHERE s_no = '$id'");
-    if($insert_query){
-        $_SESSION['successUpdate'] = 1;
-    }else echo 'not run';
+    $e_check = mysqli_query($conn, "SELECT email FROM users WHERE email = '$update_email'");
+    $num_rows = mysqli_num_rows($e_check);
+    if($num_rows < 2 ) {
+        $self_e_check = mysqli_query($conn, "SELECT email FROM users WHERE s_no = '$id'");
+        echo mysqli_num_rows($self_e_check);
+        $self_e_check_array = mysqli_fetch_array($self_e_check);
+        if($self_e_check_array['email'] == $update_email){
+             $insert_query= mysqli_query($conn, "UPDATE users SET first_name ='$update_first_name', last_name = '$update_last_name', email = '$update_email', is_active = '$update_status', role = '$update_role' WHERE s_no = '$id'");
+            if($insert_query){
+            $_SESSION['successUpdate'] = 1;
+            }else echo 'not run';
+        }else{
+            $_SESSION['successUpdate'] = 2;
+        }
+       
+    }else{
+        $_SESSION['successUpdate'] = 2;
+    }
 }
 ?>
