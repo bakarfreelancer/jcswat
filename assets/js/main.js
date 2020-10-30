@@ -58,3 +58,34 @@ $(document).ready(function () {
         }
     });
 });
+
+// ANNIMATIONS
+$(document).ready(function () {
+    // Annimations on scroll
+    $('.fewWordsLogo').waypoint(function (direction) {
+        $('.fewWordsLogo').addClass('animated fadeInUp');
+    }, {
+        offset: '60%'
+    });
+
+    // EXPLORE BUTTON ANNIMATON
+    $('.exploreBtn').waypoint(function (direction) {
+        $('.exploreBtn').addClass('animated fadeInRight');
+    }, {
+        offset: '70%'
+    });
+
+    // SINGLE POST
+    $('.singlePostOne').waypoint(function (direction) {
+        $('.singlePostOne').addClass('animated fadeInUp');
+        setTimeout(() => {
+            $('.singlePostTwo').addClass('animated fadeInUp');
+        }, 800);
+        setTimeout(() => {
+            $('.singlePostThree').addClass('animated fadeInUp');
+        }, 1600);
+    }, {
+        offset: '75%'
+    });
+
+});

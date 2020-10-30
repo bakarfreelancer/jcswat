@@ -1,0 +1,14 @@
+.singlePostOne,
+.singlePostTwo,
+.singlePostThree,
+.exploreBtn,
+.fewWordsLogo{
+    opacity: 0;
+}
+.singlePostOne .animated,
+.singlePostTwo .animated,
+.singlePostThree .animated,
+.exploreBtn .animated,
+.fewWordsLogo .animated{
+    opacity: 1;
+}
