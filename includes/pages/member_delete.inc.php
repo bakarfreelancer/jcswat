@@ -1,4 +1,7 @@
 <?php
+if(!isset($_GET['id'])){
+    echo '<script>location.replace("dashboard.php")</script>';
+  }
 if(isset($_GET['id'])){
 $memberId = $_GET['id'];
 $member_query = mysqli_query($conn, "SELECT * FROM users WHERE s_no = '$memberId'");

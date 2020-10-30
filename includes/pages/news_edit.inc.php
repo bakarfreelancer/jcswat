@@ -1,9 +1,14 @@
 <?php
+if(!isset($_GET['id'])){
+  echo '<script>location.replace("dashboard.php")</script>';
+}
 if(isset($_GET['id'])){
     $newsId = $_GET['id'];
     $news_query = mysqli_query($conn, "SELECT * FROM event_news WHERE s_no = '$newsId'");
     if(mysqli_num_rows($news_query) == 1){
     $news_data = mysqli_fetch_array($news_query);
+    }else{
+      echo '<script>location.replace("dashboard.php")</script>';
     }
     }
 ?>

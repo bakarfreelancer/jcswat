@@ -44,7 +44,7 @@
           <a class="dropdown-item" href="dashboard.php"><i class="fas fa-tachometer-alt"></i> Dashboard</a>';
         }else{
           echo '<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="profile.php"><i class="fas fa-id-card"></i> Profile</a>';
+          <a class="dropdown-item" href="index.php?page=user_profile&id='.$_SESSION['id'].'"><i class="fas fa-id-card"></i> Profile</a>';
         }
       }
         if(isset($_SESSION['role'])){

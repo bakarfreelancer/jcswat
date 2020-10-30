@@ -3,8 +3,12 @@ require 'config/config.php';
 require 'includes/form_handlers/register_handler.php';
 require 'includes/form_handlers/login_handler.php';
 require 'includes/form_handlers/member_update_handler.php';
+require 'includes/form_handlers/profile_update_handler.php';
 require 'includes/form_handlers/add_news_handler.php';
 require 'includes/form_handlers/update_news_handler.php';
+if($_SESSION['role'] != 'admin'){
+  header('Location: index.php');
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,9 +47,10 @@ require 'includes/form_handlers/update_news_handler.php';
           <i class="fas fa-times"></i>
         </div>
       </div>
+      <a href="dashboard.php?page=profile&id=<?php echo $_SESSION['id']; ?>">
       <div class="sidebar-header">
         <div class="user-pic">
-          <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+          <img class="img-responsive img-rounded" src="assets/images/user.jpg"
             alt="User picture">
         </div>
         <div class="user-info">
@@ -61,6 +66,7 @@ require 'includes/form_handlers/update_news_handler.php';
           </span>
         </div>
       </div>
+      </a>
       <!-- sidebar-header  -->
       <!-- <div class="sidebar-search">
         <div>

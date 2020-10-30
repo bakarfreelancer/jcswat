@@ -17,6 +17,8 @@ if(isset($_POST['login'])){
             $_SESSION['last_name'] = $row['last_name'];            
             $_SESSION['email'] = $row['email'];                        
             $_SESSION['role'] = $row['role'];
+            $_SESSION['id'] = $row['s_no'];
+            $_SESSION['pass'] = $row['password'];
 
             if($row['role'] == 'subscriber') { //GOING TO DIFFERENT PAGE ON THE BASIS OF USER ROLE
                 header("Location: index.php");
