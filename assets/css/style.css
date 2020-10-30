@@ -219,7 +219,49 @@ nav{
 .imgcsd img{
   max-height:100vh;
 }
-/* contactPage */
+
+/* ---------------ABOUT PAGE-------------- */
+.principalImg img{
+  width: 85%;
+  
+
+}
+.principalImg{
+  text-align: center;
+}
+.principalName{
+  color: var(--primary-color);
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+}
+.history h2,
+.history{
+  color: #fff;
+}
+.slidertext{
+  background-color:var(--primary-color);
+}
+.aboutSlider .slidertext h5{
+  color:#fff;
+}
+.aboutSlider .slidertext{
+  padding-bottom: 80px;
+}
+.aboutSlider{
+  background-color: var(--primary-color);
+  height: 350px;
+}
+.aboutVideo iframe{
+  max-width: 100%;
+}
+
+.jcHistory p{
+  word-spacing: 1px;
+  line-height: 40px;
+}
+
+/* -------------contactPage -------------*/
 .contactForm {
   background: #dfdfdfcc;
   padding: 30px 20px;

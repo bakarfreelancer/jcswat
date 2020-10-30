@@ -1,3 +1,4 @@
+.historyMainDiv,
 .singlePostOne,
 .singlePostTwo,
 .singlePostThree,
@@ -5,6 +6,7 @@
 .fewWordsLogo{
     opacity: 0;
 }
+.historyMainDiv .animated,
 .singlePostOne .animated,
 .singlePostTwo .animated,
 .singlePostThree .animated,

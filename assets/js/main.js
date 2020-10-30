@@ -88,4 +88,16 @@ $(document).ready(function () {
         offset: '75%'
     });
 
+    // --------------------------
+    // About Page 
+    // --------------------------
+
+    // Video section
+
+    $('.historyMainDiv').waypoint(function (direction) {
+        $('.historyMainDiv').addClass('animated fadeIn');
+    }, {
+        offset: '50%'
+    });
+
 });

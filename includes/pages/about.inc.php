@@ -2,12 +2,12 @@
 <div class="spacer"></div>
 <div class="spacer"></div>
 <div class="spacer"></div>
-<h1 class="text-center">About jc</h1>
+<h1 class="text-center animated fadeIn">About jc</h1>
 <div class="spacer"></div>
 <div class='container-fluid'>
     <div class="container">
         <div class="row">
-            <div class="col-md-3 principalImg">
+            <div class="col-md-3 mt-3 principalImg animated fadeIn">
                 <img src="./assets/images/prncpl.jpeg"  alt=" princpl">
                     <span class="principalName">prof.sayyed mumtaz ali shah</span>
             </div>
@@ -23,7 +23,7 @@
         <div class="spacer"></div>
 </div>
 
-<div class="container-fluid bg-pr">
+<div class="container-fluid bg-pr historyMainDiv">
 <div class="container history">
     <!-- history start -->
   
@@ -39,9 +39,9 @@
         <!-- video column close -->
 
         <!-- history of jc column open -->
-        <div class="col-md-6">
-            <h2 class="">history of jahanzeb college</h2>
-            <p>Jahanzeb College is a trailblazer for the rest of the institutions in KPK because of its rich history, exceptional teaching and its vital role in the enlightenment, development, shaping and broadening the spectrum of thinking of its students over the years.</p>
+        <div class="col-md-6 jcHistory">
+            <h2 class="my-4">history of jahanzeb college</h2>
+            <p class="mt-3">Jahanzeb College is a trailblazer for the rest of the institutions in KPK because of its rich history, exceptional teaching and its vital role in the enlightenment, development, shaping and broadening the spectrum of thinking of its students over the years.</p>
         </div>
         <!-- history of jc column close -->  
 
