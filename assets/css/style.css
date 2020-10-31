@@ -261,11 +261,12 @@ nav{
   line-height: 40px;
 }
 
-/* -------------contactPage -------------*/
-.contactForm {
-  background: #dfdfdfcc;
-  padding: 30px 20px;
-  border-radius: 25px;
+.waliSwatParaDiv p{
+  line-height: 30px;
+  max-width: 90%;
+  font-size: 110%;
+
+}
 }
 .contactTag {
   /* background: #33803f; */

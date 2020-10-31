@@ -26,7 +26,6 @@
 <div class="container-fluid bg-pr historyMainDiv">
 <div class="container history">
     <!-- history start -->
-  
     <div class="spacer"></div>
     <div class="spacer"></div>
 
@@ -52,50 +51,50 @@
     </div>
     <div class="container-fluid">
         <div class="spacer"></div>
-<div class="container waliSwat">
-    <div class="row">
-        <!-- row2 open -->
-        <div class="col-md-3">
-            <img src="./assets/images/wali.jpg" alt="wali saib">
+    <div class="container waliSwat">
+        <div class="row">
+            <!-- row2 open -->
+            <div class="col-md-3">
+                <img src="./assets/images/wali.jpg" alt="wali saib">
+            </div>
+            <div class="col-md-9 waliSwatParaDiv">
+                <h3 class="my-4">wali of swat</h3>
+                <p class="">His Highness, Miangul Abdul Haq Jahanzeb, the former ruler of Swat state, built a lot of schools in every corner of his domain, including the erection of the building of Jahanzeb College in 1952. The buildings of Jahanzeb College can be seen in clusters sprawling on both sides of the road that links Mingora Saidu Sharif.  </p>
+            </div>
         </div>
-        <div class='col-md-9'>
-            <h3 class=''>wali of swat</h3>
-            <p>His Highness, Miangul Abdul Haq Jahanzeb, the former ruler of Swat state, built a lot of schools in every corner of his domain, including the erection of the building of Jahanzeb College in 1952. The buildings of Jahanzeb College can be seen in clusters sprawling on both sides of the road that links Mingora Saidu Sharif.  </p>
-        </div>
-    </div>
         <!-- row 2 close -->
         <div class="spacer"></div>
-</div>
+    </div>
 <!-- history close -->
 
 </div>
 <!-- container-fluid close -->
 <!-- slider -->
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
+  <!-- <ol class="carousel-indicators">
     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
     <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-  </ol>
+  </ol> -->
   <div class="carousel-inner">
     <div class="carousel-item active aboutSlider">
      
       <div class="carousel-caption d-md-block slidertext">
-        <h5>First slide label</h5>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <h5>Muhammad (PBUH)</h5>
+        <p><br>Seek knowledge from the Cradle to the Grave.</p>
       </div>
     </div>
     <div class="carousel-item aboutSlider">
       
       <div class="carousel-caption d-md-block slidertext">
-        <h5>Second slide label</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h5>Sir Syed Ahmed Khan</h5>
+        <p><br>Acquisition of knowledge of science and technology is the only solution for the problems of Muslims.<br></p>
       </div>
     </div>
     <div class="carousel-item aboutSlider">
            <div class="carousel-caption d-md-block slidertext">
-        <h5>Third slide label</h5>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        <h5>Muhammad Ali Jinnah</h5>
+        <p>You must concentrate on gaining knowledge and education. It is your foremost responsibility. Political awareness of the era is also part of your education. You must be aware of international events and environment. Education is a matter of life and death for our country.</p>
       </div>
     </div>
   </div>

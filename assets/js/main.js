@@ -100,4 +100,11 @@ $(document).ready(function () {
         offset: '50%'
     });
 
+    // WALI OF SWAT
+    $('.waliSwatParaDiv').waypoint(function (direction) {
+        $('.waliSwatParaDiv').addClass('animated fadeInRight');
+    }, {
+        offset: '60%'
+    });
+
 });
