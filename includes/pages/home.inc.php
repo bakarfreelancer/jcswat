@@ -182,7 +182,7 @@
           </div>
           <div class="newsPostTextDiv">
              <h6 class="newsPostTitle"><a href="#">5 Ways to Pay for Community College</a></h6>
-         <p class="newsPostParagraph text-left">Many community colleges offer promise programs, which offer tuition-free awards to eligible students.</p>
+         <p class="newsPostParagraph text-left">Many community colleges offer promise programs, which offer tuition-free awards to eligible students. Which offer tuition-free awards to eligible students</p>
           <div class="newsPostDate text-left">
             <i class="fas fa-calendar-alt"></i>&nbsp;<span class="newsPostDateText"><span id="newsPostDate">5</span> days ago</span>
           </div>

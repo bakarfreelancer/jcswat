@@ -41,7 +41,7 @@
         </li>
         <li>
           <p>
-            <a href="#">DEPARTMENTS</a>
+            <a href="index.php?page=adminssions">ADMISSIONS</a>
           </p>
         </li>
         <?php

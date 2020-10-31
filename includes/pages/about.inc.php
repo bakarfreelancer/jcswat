@@ -2,9 +2,10 @@
 <div class="spacer"></div>
 <div class="spacer"></div>
 <div class="spacer"></div>
-<h1 class="text-center animated fadeIn">About jc</h1>
+<h2 class="text-center animated fadeIn aboutHeading mt-2">About Jahanzeb College</h2>
 <div class="spacer"></div>
-<div class='container-fluid'>
+<div class='container-fluid principalMessage'>
+  <div class="spacer"></div>
     <div class="container">
         <div class="row">
             <div class="col-md-3 mt-3 principalImg animated fadeIn">

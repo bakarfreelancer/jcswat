@@ -62,6 +62,39 @@ $(document).ready(function () {
 // ANNIMATIONS
 $(document).ready(function () {
     // Annimations on scroll
+
+    // NAV BAR
+    $('.secondSec').waypoint(function (direction) {
+        console.log('second\n');
+        $('.logo').attr('src', 'assets/images/logo.png');
+        $('.logo').addClass('smallLogo');
+    }, {
+        offset: '-40%'
+    });
+
+    $('.firstSec').waypoint(function (direction) {
+        console.log('first\n');
+        $('.logo').attr('src', 'assets/images/logo_300.png');
+        $('.logo').removeClass('smallLogo');
+    }, {
+        offset: '-30%'
+    });
+
+    // $('.fewWordsLogo').waypoint(function (direction) {
+    //     $('.logo').attr('src', 'assets/images/logo.png');
+    //     $('.logo').addClass('smallLogo');
+    // }, {
+    //     offset: '20%'
+    // });
+
+    // $('#headSlider').waypoint(function (direction) {
+    //     console.log('up');
+    //     $('.logo').attr('src', 'assets/images/logo_300.png');
+    //     $('.logo').removeClass('smallLogo');
+    // }, {
+    //     offset: '-50%'
+    // });
+
     $('.fewWordsLogo').waypoint(function (direction) {
         $('.fewWordsLogo').addClass('animated fadeInUp');
     }, {
