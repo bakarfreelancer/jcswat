@@ -10,27 +10,24 @@
           <!-- Slide One - Set the background image for this slide in the line below -->
           <div class="carousel-item active" style="background-image: url('assets/images/slider1.jpg')">
           <div class="carousel-caption d-md-block jumbotron slidercontent">
-            <h2 class="display-4">Lorem Ipsum</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore.</p>
+            <h2 class="display-4">Higher Education</h2>
+            <p class="lead">You will have a deeper knowledge of the subjects that will be useful when climbing the career ladder.</p>
           </div>
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('assets/images/slider2.jpg')">
           <div class="carousel-caption d-md-block jumbotron slidercontent">
-            <h2 class="display-4">Lorem Ipsum</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore.</p>
+            <h2 class="display-4">Creating Your Future</h2>
+            <p class="lead">Together with our university's professors and academics, you can create the future for yourself.</p>
           </div>
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('assets/images/slider3.jpg')">
             <div class="carousel-caption d-md-block jumbotron slidercontent">
               <h2 class="display-4">
-                Lorem Ipsum
+              More Than Studying
               </h2>
-              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                ut labore.</p>
+              <p class="lead">University also gives you an opportunity to benefit from spending your free time by playing sports.</p>
             </div>
           </div>
 

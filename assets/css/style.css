@@ -139,6 +139,7 @@ nav{
 }
 .slidercontent > h2 {
   color: #fff;
+  font-size: 230%;
 }
 
 /* Few words about college */
@@ -273,7 +274,12 @@ nav{
   font-size: 110%;
 
 }
-
+/* -------------contactPage -------------*/
+.contactForm {
+  background: #dfdfdfcc;
+  padding: 30px 20px;
+  border-radius: 25px;
+}
 .contactTag {
   /* background: #33803f; */
   padding: 3px;
@@ -494,6 +500,16 @@ nav{
   .navbar-toggler-icon{
     font-size: 70%;
   }
+
+  /* Slider */
+  .slidercontent > h2 {
+    font-size: 155%;
+  }
+  .slidercontent > p {
+    font-size: 105%;
+  }
+  
+  
   /* news Notificaton button  */
 
   .circle {

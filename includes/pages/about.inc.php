@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-md-3 mt-3 principalImg animated fadeIn">
                 <img src="./assets/images/prncpl.jpeg"  alt=" princpl">
-                    <span class="principalName">prof.sayyed mumtaz ali shah</span>
+                    <span class="principalName mb-4 d-block">prof.sayyed mumtaz ali shah</span>
             </div>
             <div class="col-md-9">
                 <h3>PRINCIPAL MESSAGE</h3>
@@ -55,7 +55,7 @@
     <div class="container waliSwat">
         <div class="row">
             <!-- row2 open -->
-            <div class="col-md-3">
+            <div class="col-md-3 mx-auto text-center">
                 <img src="./assets/images/wali.jpg" alt="wali saib">
             </div>
             <div class="col-md-9 waliSwatParaDiv">
