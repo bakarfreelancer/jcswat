@@ -448,6 +448,37 @@ nav{
   border: none;
 }
 
+/* DEPARTMENTES */
+.deptHead h2{
+  font-size: 330%;
+  letter-spacing: 3px;
+  padding: 120px 0;
+  text-align: center;
+}
+.deptCs,
+.deptEng{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.deptEng{
+  background-image: url(../images/deptbg2.jpg);
+}
+.deptCs{
+  background-image: url(../images/deptbg.jpg);
+}
+
+.staff{
+  background-color: #e6e6e6;
+}
+.staffDiv{
+  border-radius: 15px;
+  margin-top: 50px;
+}
+.staffDiv img{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
 
 
 
@@ -558,6 +589,12 @@ nav{
 .noFoundGif{
   width: 100%;
 }
+/* DEPARTMENTES */
+.deptHead h2{
+  font-size: 200%;
+  letter-spacing: 2px;
+  padding: 80px 0;
+} 
 
 }
 
