@@ -14,12 +14,14 @@
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-university"></i>
           Departments
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="dropdown-menu pb-0" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="index.php?page=csdept">Computer Science</a>
           <a class="dropdown-item" href="index.php?page=urdudept">Urdu</a>
           <a class="dropdown-item" href="index.php?page=statistic">Statistics</a>
           <a class="dropdown-item" href="index.php?page=english">English</a>
           <a class="dropdown-item" href="index.php?page=physics">Physics</a>
+          <div class="dropdown-divider"></div>
+          <a class="btn btn-pr text-center mx-auto d-block" href="index.php?page=admissions"><span class="text-white">Admissions</span></a>
         </div>
       </li>
       <li class="nav-item">

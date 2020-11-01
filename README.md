@@ -1,9 +1,13 @@
 # GOVT. PG JAHANZEB COLLEGE SAIDU SHARIF SWAT
+
 > A practice project of Web fundamentals
 
 Task assigned by **Mr. Uzair Ali**
+
 ## View site [jcswat.theoperatingsystems.com](https://jcswat.theoperatingsystems.com/)
+
 ## Site Structure directory wise
+
 - root
   - index.php (Main Home page)
   - dashboard.php (Main Admin page)
@@ -53,13 +57,15 @@ Task assigned by **Mr. Uzair Ali**
       - statistics.inc.php
       - urdudept.inc.php
       - user_profile.inc.php
+
 ## Tools used
 
 1. Bootstrap framwork
 2. jquery library
-   -  counter up
-   -  waypoints
+   - counter up
+   - waypoints
 
 ## Contributes __2__
+
 - [Talha rahman](https://github.com/itzbUnny1)
 - [Abu Bakar](https://github.com/bakarfreelancer/)
