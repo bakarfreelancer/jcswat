@@ -24,26 +24,26 @@
   <div class="container statisticsContainer text-center">
         <h2 class="mx-4 text-uppercase">Staff of the department</h2>
         <hr class="smallLinePr mx-auto">
-        <div class="row mx-auto ">
-            <div class="col-md-3 col-sm-8 px-0 py-0 bg-pr mx-auto staffDiv">
+        <div class="row mx-auto staffRow1">
+            <div class="col-md-3 col-sm-8 px-0 py-0 bg-pr mx-auto staffDiv col1">
               <img src="assets/images/sfaisal.jpg" alt="" style="width:inherit;">
               <p class="my-3 text-white"><b>Mr. Shah Faisal</b><br>Assistant Professor</p>
             </div>
-           <div class="col-md-3 col-sm-8 px-0 py-0 bg-pr mx-auto staffDiv">
+           <div class="col-md-3 col-sm-8 px-0 py-0 bg-pr mx-auto staffDiv col2">
               <img src="assets/images/ahusain.jpeg" alt="" style="width:inherit;">
               <p class="my-3 text-white"><b>Mr. Ahamd Hussain</b><br>Assistant Professor</p>
             </div>
-            <div class="col-md-3 col-sm-8 px-0 py-0 bg-pr mx-auto staffDiv">
+            <div class="col-md-3 col-sm-8 px-0 py-0 bg-pr mx-auto staffDiv col3">
               <img src="assets/images/mhabib.jpg" alt="" style="width:inherit;">
               <p class="my-3 text-white"><b>Mr. Muhammad Habib</b><br>Assistant Professor</p>
             </div>
         </div>
-        <div class="row mx-auto ">
-            <div class="col-md-3 col-sm-8 px-0 py-0 bg-pr mx-auto staffDiv">
+        <div class="row mx-auto staffRow2">
+            <div class="col-md-3 col-sm-8 px-0 py-0 bg-pr mx-auto staffDiv col4">
               <img src="assets/images/adost.jpg" alt="" style="width:inherit;">
               <p class="my-3 text-white"><b>Mr. Amir Dost Khan</b><br>Assistant Professor</p>
             </div>
-           <div class="col-md-3 col-sm-8 px-0 py-0 bg-pr mx-auto staffDiv">
+           <div class="col-md-3 col-sm-8 px-0 py-0 bg-pr mx-auto staffDiv col5">
               <img src="assets/images/yunus.jpg" alt="" style="width:inherit;">
               <p class="my-3 text-white"><b>Mr. Younas Ali</b><br>Assistant Professor</p>
             </div>

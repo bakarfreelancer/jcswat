@@ -24,30 +24,30 @@
   <div class="container statisticsContainer text-center">
         <h2 class="mx-4 text-uppercase">Staff of the department</h2>
         <hr class="smallLinePr mx-auto">
-        <div class="row mx-auto ">
-            <div class="col-md-3 col-sm-8 px-0 py-0 bg-pr mx-auto staffDiv">
+        <div class="row mx-auto staffRow1 ">
+            <div class="col-md-3 col-sm-8 px-0 py-0 bg-pr mx-auto staffDiv col1">
               <img src="assets/images/Fazal.jpeg" alt="" style="width:inherit;">
               <p class="my-3 text-white"><b>Mr. Fazal Rabi</b><br>Assistant Professor</p>
             </div>
-           <div class="col-md-3 col-sm-8 px-0 py-0 bg-pr mx-auto staffDiv">
+           <div class="col-md-3 col-sm-8 px-0 py-0 bg-pr mx-auto staffDiv col2">
               <img src="assets/images/Seraj.jpeg" alt="" style="width:inherit;">
               <p class="my-3 text-white"><b>Mr. Seraj Ul Haq</b><br>Assistant Professor</p>
             </div>
-            <div class="col-md-3 col-sm-8 px-0 py-0 bg-pr mx-auto staffDiv">
+            <div class="col-md-3 col-sm-8 px-0 py-0 bg-pr mx-auto staffDiv col3">
               <img src="assets/images/isa.jpeg" alt="" style="width:inherit;">
               <p class="my-3 text-white"><b>Mr. Isa Khan</b><br>Assistant Professor</p>
             </div>
         </div>
-        <div class="row mx-auto ">
-            <div class="col-md-3 col-sm-8 px-0 py-0 bg-pr mx-auto staffDiv">
+        <div class="row mx-auto staffRow2">
+            <div class="col-md-3 col-sm-8 px-0 py-0 bg-pr mx-auto staffDiv col4">
               <img src="assets/images/akhtr.jpeg" alt="" style="width:inherit;">
               <p class="my-3 text-white"><b>Mr. Akhtar Munir</b><br>Assistant Professor</p>
             </div>
-           <div class="col-md-3 col-sm-8 px-0 py-0 bg-pr mx-auto staffDiv">
+           <div class="col-md-3 col-sm-8 px-0 py-0 bg-pr mx-auto staffDiv col5">
               <img src="assets/images/rohul.jpg" alt="" style="width:inherit;">
               <p class="my-3 text-white"><b>Mr. Rohul Amin</b><br>Assistant Professor</p>
             </div>
-        <<div class="col-md-3 col-sm-8 px-0 py-0 bg-pr mx-auto staffDiv">
+        <div class="col-md-3 col-sm-8 px-0 py-0 bg-pr mx-auto staffDiv col6">
               <img src="assets/images/haider.jpg" alt="" style="width:inherit;">
               <p class="my-3 text-white"><b>Mr. Haider Ali</b><br>Assistant Professor</p>
             </div>

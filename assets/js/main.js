@@ -122,5 +122,29 @@ $(document).ready(function () {
     }, {
         offset: '60%'
     });
+    
+    // DEPARTMENTS STAFF
+    $('.staffRow1').waypoint(function (direction) {
+        $('.col1').addClass('animated fadeInUp');
+        setTimeout(() => {
+            $('.col2').addClass('animated fadeInUp');
+        }, 800);
+        setTimeout(() => {
+            $('.col3').addClass('animated fadeInUp');
+        }, 1600);
+    }, {
+        offset: '75%'
+    });
+    $('.staffRow2').waypoint(function (direction) {
+        $('.col4').addClass('animated fadeInUp');
+        setTimeout(() => {
+            $('.col5').addClass('animated fadeInUp');
+        }, 700);
+        setTimeout(() => {
+            $('.col6').addClass('animated fadeInUp');
+        }, 1400);
+    }, {
+        offset: '75%'
+    });
 
 });
