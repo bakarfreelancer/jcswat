@@ -11,11 +11,9 @@
     <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
 
       <!-- Content -->
-      <h5 class="font-weight-bold text-uppercase mb-4">Footer Content</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate
-        esse
-        quasi, veritatis totam voluptas nostrum.</p>
+      <h5 class="font-weight-bold text-uppercase mb-4">Jahanzeb College</h5>
+      <p>This is no real webiste of college. The site is for practice.</p>
+      <p class="text-justify">Jahanzeb College is a trailblazer for the rest of the institutions in KPK because of its history, development, shaping and broadening.</p>
 
     </div>
     <!-- Grid column -->
@@ -41,7 +39,7 @@
         </li>
         <li>
           <p>
-            <a href="index.php?page=adminssions">ADMISSIONS</a>
+            <a href="index.php?page=admissions">ADMISSIONS</a>
           </p>
         </li>
         <?php
