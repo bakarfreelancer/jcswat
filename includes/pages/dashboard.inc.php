@@ -1,5 +1,7 @@
 <?php
-
+if($_SESSION['role'] != 'admin'){
+    echo '<script>location.replace("index.php")</script>';
+  }
 // TOTAL SUBSCRIBERS
 $subscribers_query = mysqli_query($conn, 'SELECT * FROM users WHERE role = "subscriber"');
 $no_of_subscribers = mysqli_num_rows($subscribers_query);

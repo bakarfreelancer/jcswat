@@ -1,11 +1,31 @@
 <?php
 $get_news_query = mysqli_query($conn, 'SELECT * FROM event_news ORDER BY publish_date DESC');
+if($_SESSION['role'] != 'admin'){
+  echo '<div class="spacer"></div>';
+  echo '<div class="spacer"></div>';
+}
 ?>
 <div class="container-fluid">
+<?php
+if(isset($_SESSION['role'])){
+  if($_SESSION['role'] != 'admin'){
+  echo '<div class="container">';
+}
+}else{
+    echo '<div class="container">';
+}
+?>
     <div>
         <span class="text-center my-3 d-block">
           <h3 class="text-center d-inline-block">News</h3>
-          <a href="dashboard.php?page=add_news" class="btn btn-pr float-right position-absolute addNews">add news <i class="fas fa-plus"></i></a>
+          <?php 
+          if(isset($_SESSION['role'])){
+            if($_SESSION['role'] == 'admin'){
+            echo '<a href="dashboard.php?page=add_news" class="btn btn-pr float-right position-absolute addNews">add news <i class="fas fa-plus"></i></a>';
+          }
+          }
+          ?>
+          
       </span>
     </div>
     <div>
@@ -34,10 +54,14 @@ $get_news_query = mysqli_query($conn, 'SELECT * FROM event_news ORDER BY publish
                        echo '" data-parent="#news">';
                        echo '<div class="card-body">';
                        echo $row['news_message'];
-                       echo '<div class="mt-3">
+                       if(isset($_SESSION['role'])){
+                        if($_SESSION['role'] == 'admin'){
+                        echo '<div class="mt-3">
                        <a href="dashboard.php?page=news_edit&id='.$row['s_no'].'" class="btn btn-pr">Edit</a>
                        <a class="btn btn-danger">DELETE</a>
                        </div>';
+                      }
+                      }
                        echo '</div></div></div>';
                        $counter++;
                    }
@@ -45,8 +69,25 @@ $get_news_query = mysqli_query($conn, 'SELECT * FROM event_news ORDER BY publish
                 }
         ?>
     </div>
+<?php
+if(isset($_SESSION['role'])){
+  if($_SESSION['role'] != 'admin'){
+  echo '</div>';
+}
+}else{
+    echo '</div>';
+}
+?>
 </div>
-
+<?php
+if(isset($_SESSION['role'])){
+  if($_SESSION['role'] != 'admin'){
+  echo '<div class="spacer"></div>';
+}
+}else{
+  echo '<div class="spacer"></div>';
+}
+?>
 <!-- ------------------------------------------- -->
 <!-- <div class="accordion newsTable" id="news">
   <div class="card">

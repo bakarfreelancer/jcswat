@@ -1,3 +1,8 @@
+<?php
+if($_SESSION['role'] != 'admin'){
+  echo '<script>location.replace("index.php")</script>';
+}
+?>
 <div class="container_fluid">
     <div>
       <span class="text-center my-3 d-block">

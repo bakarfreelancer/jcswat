@@ -1,4 +1,7 @@
 <?php
+if($_SESSION['role'] != 'admin'){
+  echo '<script>location.replace("index.php")</script>';
+}
 if(!isset($_GET['id'])){
   echo '<script>location.replace("dashboard.php")</script>';
 }
