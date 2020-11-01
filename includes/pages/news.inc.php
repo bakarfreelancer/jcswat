@@ -49,7 +49,7 @@ if(isset($_SESSION['role'])){
                        echo '</button></h2></div>';
                        echo '<div id="c';
                        echo $row['s_no'];
-                       echo '" class="collapse';
+                       echo '" class="collapse ';
                        if($counter == 1)echo 'show';
                        echo '" data-parent="#news">';
                        echo '<div class="card-body">';
