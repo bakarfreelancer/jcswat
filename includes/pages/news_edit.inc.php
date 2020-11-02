@@ -47,7 +47,7 @@ if(isset($_GET['id'])){
                 </div>
               </div>
             </div>
-            <button class="btn btn-block btn-pr" type="submit" name="update_news" >Add <i class="fas fa-plus"></i></button>
+            <button class="btn btn-block btn-pr" type="submit" name="update_news" >Update <i class="far fa-edit"></i></button>
           </form>
     </div>
 </div>

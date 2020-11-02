@@ -7,6 +7,24 @@ if($_SESSION['role'] != 'admin'){
 ?>
 <div class="container-fluid">
 <?php
+  if(isset($_SESSION['delete_news'])){
+    if($_SESSION['delete_news'] == 1){
+      echo '<div class="alert alert-success successDeleteMember" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <strong>Deleted!</strong> You have deleted news successfully!</div>';
+      $_SESSION['delete_news'] = 0;
+  }
+  }
+
+  if(isset($_SESSION['updateNews'])){
+    if($_SESSION['updateNews'] == 1){
+      echo '<div class="alert alert-success successDeleteMember" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <strong>Updated!</strong> You have updated news successfully!</div>';
+      $_SESSION['updateNews'] = 0;
+  }
+  }
+
 if(isset($_SESSION['role'])){
   if($_SESSION['role'] != 'admin'){
   echo '<div class="container">';
@@ -58,7 +76,7 @@ if(isset($_SESSION['role'])){
                         if($_SESSION['role'] == 'admin'){
                         echo '<div class="mt-3">
                        <a href="dashboard.php?page=news_edit&id='.$row['s_no'].'" class="btn btn-pr">Edit</a>
-                       <a class="btn btn-danger">DELETE</a>
+                       <a href="dashboard.php?page=news_delete&id='.$row['s_no'].'" class="btn btn-danger">DELETE</a>
                        </div>';
                       }
                       }

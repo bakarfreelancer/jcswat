@@ -1,4 +1,4 @@
-  <header id="headSlider">
+<header id="headSlider">
       <!-- header slider -->
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -216,18 +216,25 @@
       </div>
       <div class="modal-body" style="width:100%" >
             <div class= "marQuee">
-                <p>Upcomming sports events</p>
-                <p>Result announced for spring exam</p>
-                <p>College trip to Kalam</p>
-                <p>Welcome party for new students</p>
-                <p>Classes starts</p>
-                <p>Blood camp on sunday</p>
+            <?php
+$news_title = mysqli_query($conn, 'SELECT title FROM event_news ORDER BY publish_date DESC');
+$show_news_counter = 0;
+while($row = mysqli_fetch_array($news_title)){
+  echo '<p>';
+  echo $row[0];
+  echo '</p>';
+  $show_news_counter++;
+  if($show_news_counter >= 7 ){
+    break;
+  }
+}
+?>
             </div>
         
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
-        <button type="button" class="btn btn-pr">More</button>
+        <a href="index.php?page=news"><button type="button" class="btn btn-pr">More</button></a>
       </div>
     </div>
   </div>
