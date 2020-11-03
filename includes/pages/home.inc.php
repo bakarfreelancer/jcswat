@@ -216,17 +216,12 @@
       </div>
       <div class="modal-body" style="width:100%" >
             <div class= "marQuee">
-            <?php
-$news_title = mysqli_query($conn, 'SELECT title FROM event_news ORDER BY publish_date DESC');
-$show_news_counter = 0;
+<?php
+$news_title = mysqli_query($conn, 'SELECT title FROM event_news ORDER BY publish_date DESC LIMIT 8');
 while($row = mysqli_fetch_array($news_title)){
   echo '<p>';
   echo $row[0];
   echo '</p>';
-  $show_news_counter++;
-  if($show_news_counter >= 7 ){
-    break;
-  }
 }
 ?>
             </div>
