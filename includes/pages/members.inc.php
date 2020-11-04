@@ -1,6 +1,6 @@
 <?php
 if($_SESSION['role'] != 'admin'){
-  echo '<script>location.replace("index.php")</script>';
+  redirect('index.php');
 }
 $userIdForDeletion =0;
 $get_members_query = mysqli_query($conn, 'SELECT * FROM users ORDER BY role');

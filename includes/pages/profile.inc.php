@@ -1,6 +1,6 @@
 <?php
 if(!isset($_GET['id']) || $_SESSION['id'] != $_GET['id']){//will redirect to dashboard page if the user is not logged in or if user provide other id this is for admin
-  echo '<script>location.replace("dashboard.php")</script>';
+  redirect('dashboard.php');
 }
 if(isset($_GET['id'])){
 $memberId = $_GET['id'];

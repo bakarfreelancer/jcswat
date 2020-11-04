@@ -1,6 +1,6 @@
 <?php
 if(!isset($_GET['id'])){//will redirect to dashboard if member is not selected
-    echo '<script>location.replace("dashboard.php")</script>';
+    redirect('dashboard.php');
   }
 if(isset($_GET['id'])){
 $memberId = $_GET['id'];
@@ -8,10 +8,10 @@ $member_query = mysqli_query($conn, "SELECT * FROM users WHERE s_no = '$memberId
 if(mysqli_num_rows($member_query) == 1){//will store member data in array if member is present in database else will redirect to members page
 $member_data = mysqli_fetch_array($member_query);
 if($member_data['role'] == 'admin'){//if selected member is an admin it will not delete member and will redirect to members page
-    echo '<script>location.replace("dashboard.php?page=members")</script>';
+    redirect('dashboard.php?page=members');
   }
 }else{
-    echo '<script>location.replace("dashboard.php?page=members")</script>';
+    redirect('dashboard.php?page=members');
 }
 }
 ?>

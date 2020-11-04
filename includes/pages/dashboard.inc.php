@@ -1,6 +1,6 @@
 <?php
 if($_SESSION['role'] != 'admin'){//will redirect to home page if user is not admin
-    echo '<script>location.replace("index.php")</script>';
+    redirect('index.php');
   }
 // TOTAL SUBSCRIBERS
 $subscribers_query = mysqli_query($conn, 'SELECT * FROM users WHERE role = "subscriber"');

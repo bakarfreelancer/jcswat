@@ -1,6 +1,6 @@
 <?php
 if(!isset($_GET['id'])){//redirect to dashboard if member is not selected
-  echo '<script>location.replace("dashboard.php")</script>';
+  redirect('dashboard.php');
 }
 if(isset($_GET['id'])){
 $memberId = $_GET['id'];
@@ -8,7 +8,7 @@ $member_query = mysqli_query($conn, "SELECT * FROM users WHERE s_no = '$memberId
 if(mysqli_num_rows($member_query) == 1){//if member data found store in an array else redirect to dashboard
 $member_data = mysqli_fetch_array($member_query);
 }else{
-  echo '<script>location.replace("dashboard.php")</script>';
+  redirect('dashboard.php');
 }
 }
 ?>

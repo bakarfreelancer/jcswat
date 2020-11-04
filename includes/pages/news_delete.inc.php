@@ -1,10 +1,10 @@
 <?php
 $_SESSION['news_delete'] = 0; //will be 1 if news deleted successfully
 if($_SESSION['role'] != 'admin'){
-  echo '<script>location.replace("index.php")</script>';
+  redirect('index.php');
 }
 if(!isset($_GET['id'])){
-  echo '<script>location.replace("dashboard.php")</script>';
+  redirect('dashboard.php');
 }
 if(isset($_GET['id'])){
     $newsId = $_GET['id'];
@@ -12,14 +12,14 @@ if(isset($_GET['id'])){
     if(mysqli_num_rows($news_query) == 1){//if selected id has some news in database the store that in an array else redirect to dashbaoard;
     $news_data = mysqli_fetch_array($news_query);
     }else{
-      echo '<script>location.replace("dashboard.php")</script>';
+      redirect('dashboard.php');
     }
     }
 if(isset($_POST['delete_news'])){//by clicking delete button it will delete news form databse and will redirect to news page on dashboard
   $delete_query_news = mysqli_query($conn, "DELETE FROM event_news WHERE s_no ='$newsId'");
   if($delete_query_news){
     $_SESSION['delete_news'] = 1;
-    echo '<script>location.replace("dashboard.php?page=news")</script>';
+    redirect('dashboard.php?page=news');
   }
 }
 ?>

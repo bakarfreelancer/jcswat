@@ -1,6 +1,6 @@
 <?php
 if($_SESSION['role'] != 'admin'){ //will redirect to home page if the current user in not admin
-  echo '<script>location.replace("index.php")</script>';
+  redirect('index.php');
 }
 ?>
 <div class="container_fluid">
