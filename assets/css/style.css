@@ -229,6 +229,9 @@ nav {
 .imgcsd img {
   max-height: 100vh;
 }
+.newsTitlediv h2 .btn {
+  box-shadow: none;
+}
 
 /* ---------------ABOUT PAGE-------------- */
 .principalMessage {

@@ -1,4 +1,6 @@
 <?php
+include 'includes/form_handlers/add_news_handler.php';
+//this page is common for both visitors and admin dashboard, so if an admin is logged in it will show delete edit and add news options else it will only show news.
 $get_news_query = mysqli_query($conn, 'SELECT * FROM event_news ORDER BY publish_date DESC');
 if($_SESSION['role'] != 'admin'){
   echo '<div class="spacer"></div>';
@@ -7,7 +9,7 @@ if($_SESSION['role'] != 'admin'){
 ?>
 <div class="container-fluid">
 <?php
-  if(isset($_SESSION['delete_news'])){
+  if(isset($_SESSION['delete_news'])){// if some news deleted successfully if will show message
     if($_SESSION['delete_news'] == 1){
       echo '<div class="alert alert-success successDeleteMember" role="alert">
       <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -15,14 +17,52 @@ if($_SESSION['role'] != 'admin'){
       $_SESSION['delete_news'] = 0;
   }
   }
+  if(isset($_SESSION['addedNewsI'])){
+    if($_SESSION['addedNewsI'] == 1){// will show news added message
+      echo '<div class="alert alert-success successDeleteMember" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <strong>Added!</strong> You have added news successfully!</div>';
+      // $_SESSION['addedNewsI'] = 0;
+    }
+
+    //will show error message for more characters while inserting news
+    if($_SESSION['addedNewsI'] == 2){
+      echo '<div class="alert alert-danger successDeleteMember" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <strong>Error!</strong> News Description must be less than 255 characters!</div>';
+      // $_SESSION['addedNewsI'] = 0;
+    }
+  }
+
+  if(isset($_GET['msg'])){
+    if($_GET['msg'] == 1){// will show news added message
+      echo '<div class="alert alert-success successDeleteMember" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <strong>Added!</strong> You have added news successfully!</div>';
+      // $_SESSION['addedNewsI'] = 0;
+    }
+
+    //will show error message for more characters while inserting news
+    if($_GET['msg'] == 2){
+      echo '<div class="alert alert-danger successDeleteMember" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <strong>Error!</strong> News Description must be less than 255 characters!</div>';
+      // $_SESSION['addedNewsI'] = 0;
+    }
+  }
 
   if(isset($_SESSION['updateNews'])){
-    if($_SESSION['updateNews'] == 1){
+    if($_SESSION['updateNews'] == 1){//will show success message for news updating
       echo '<div class="alert alert-success successDeleteMember" role="alert">
       <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       <strong>Updated!</strong> You have updated news successfully!</div>';
       $_SESSION['updateNews'] = 0;
-  }
+  }else if($_SESSION['updateNews'] == 2){//will show error message for news updating
+    echo '<div class="alert alert-danger successDeleteMember" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <strong>Error!</strong> News title and description must be less than 255 characters!</div>';
+    $_SESSION['updateNews'] = 0;
+}
   }
 
 if(isset($_SESSION['role'])){
@@ -37,7 +77,7 @@ if(isset($_SESSION['role'])){
         <span class="text-center my-3 d-block">
           <h3 class="text-center d-inline-block">News</h3>
           <?php 
-          if(isset($_SESSION['role'])){
+          if(isset($_SESSION['role'])){//if admin is logged in it will show add news button
             if($_SESSION['role'] == 'admin'){
             echo '<a href="dashboard.php?page=add_news" class="btn btn-pr float-right position-absolute addNews">add news <i class="fas fa-plus"></i></a>';
           }
@@ -73,7 +113,7 @@ if(isset($_SESSION['role'])){
                        echo '<div class="card-body">';
                        echo $row['news_message'];
                        if(isset($_SESSION['role'])){
-                        if($_SESSION['role'] == 'admin'){
+                        if($_SESSION['role'] == 'admin'){//admin is logged in it will show edit and delete option
                         echo '<div class="mt-3">
                        <a href="dashboard.php?page=news_edit&id='.$row['s_no'].'" class="btn btn-pr">Edit</a>
                        <a href="dashboard.php?page=news_delete&id='.$row['s_no'].'" class="btn btn-danger">DELETE</a>

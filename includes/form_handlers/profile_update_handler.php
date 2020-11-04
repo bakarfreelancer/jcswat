@@ -1,4 +1,5 @@
 <?php
+//this page works same as member_update_handler
 $_SESSION['successUpdate'] = 0;
 if(isset($_POST['profile_update'])){
     $update_first_name = $_POST['update_first_name'];

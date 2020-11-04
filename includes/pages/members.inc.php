@@ -4,37 +4,36 @@ if($_SESSION['role'] != 'admin'){
 }
 $userIdForDeletion =0;
 $get_members_query = mysqli_query($conn, 'SELECT * FROM users ORDER BY role');
-// $membersArray = mysqli_fetch_all($get_members_query);
 ?>
 <div class="container-fluid">
     <div class="container">
-
+    
     <!-- success member delete alert -->
     <?php
-    if(isset($_GET['delete'])){
+    if(isset($_GET['delete'])){ //will display success delete message if member is deleted successfully
       if($_GET['delete'] == 'yes'){
         echo '<div class="alert alert-success successDeleteMember" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <strong>Deleted!</strong> You have deleted member successfully!</div>';
       }
     }
-    if($_SESSION['successUpdate'] == 1){
+    if($_SESSION['successMemberUpdate'] == 1){//will display success message for updated member
         echo '<div class="alert alert-success successDeleteMember" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <strong>Updated!</strong> You have updated member data successfully!</div>';
-        $_SESSION['successUpdate'] = 0;
+        $_SESSION['successMemberUpdate'] = 0;
     }
-    if($_SESSION['successUpdate'] == 2){
+    if($_SESSION['successMemberUpdate'] == 2){//will display error message for failed member update
       echo '<div class="alert alert-danger successDeleteMember" role="alert">
       <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       <strong>Email Exist!</strong> Email already exist!</div>';
-      $_SESSION['successUpdate'] = 0;
+      $_SESSION['successMemberUpdate'] = 0;
       }
     ?>
         <h2 class="text-center my-4">Members</h2>
         <div style="overflow-x: auto;">
         <?php
-         if(mysqli_num_rows($get_members_query) > 0){
+         if(mysqli_num_rows($get_members_query) > 0){//if there are some members present then print all the members data in table
              $counter=1;
         echo '<table class="membersTable mx-auto">
             <tr class="tableHeadRow">
@@ -62,7 +61,7 @@ $get_members_query = mysqli_query($conn, 'SELECT * FROM users ORDER BY role');
                 echo '<td><a href="dashboard.php?page=member_edit&id=';
                 echo $row['s_no'];
                 echo '" class="btn btn-pr">Edit</a></td>';
-                if($row['role']=='subscriber'){
+                if($row['role']=='subscriber'){//will be able to delete subscriber and will not be able to delete admin
                     echo '<td><a href="dashboard.php?page=member_delete&id='. $row['s_no'] .'" class="btn btn-danger text-uppercase"  >Delete</a></td>';
                 }else{
                     echo '<td><a href="#" class="btn btn-danger text-uppercase" data-toggle="modal" data-target="#adminDeleteModal" >Delete</a></td>';

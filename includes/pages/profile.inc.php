@@ -1,5 +1,5 @@
 <?php
-if(!isset($_GET['id']) || $_SESSION['id'] != $_GET['id']){
+if(!isset($_GET['id']) || $_SESSION['id'] != $_GET['id']){//will redirect to dashboard page if the user is not logged in or if user provide other id this is for admin
   echo '<script>location.replace("dashboard.php")</script>';
 }
 if(isset($_GET['id'])){
@@ -11,7 +11,22 @@ $member_data = mysqli_fetch_array($member_query);
 }
 ?>
 <div class="contaner-fluid">
-    <div>
+    <div class="container">
+    <?php
+if(isset($_SESSION['successUpdate'])){
+  if($_SESSION['successUpdate'] == 1){
+    echo '<div class="alert alert-success successDeleteMember my-3" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <strong>Updated!</strong> Profile updated successfully!</div>';
+    $_SESSION['successUpdate'] = 0;
+}else if($_SESSION['successUpdate'] == 2){
+  echo '<div class="alert alert-danger successDeleteMember my-3" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Error!</strong> Email already exist!</div>';
+  $_SESSION['successUpdate'] = 0;
+}
+}
+?>
       <span class="text-center my-3 d-block">
       <a href="dashboard.php?page=members" class="btn btn-pr float-left"><i class="fas fa-arrow-left"></i></a>
         <h3 class="text-center d-inline-block">EDIT YOUR DETAILS</h3>
@@ -113,7 +128,7 @@ $member_data = mysqli_fetch_array($member_query);
 </div>
 
 <script>
-    function showPassAction() {
+    function showPassAction() { //for hiding and showing password while typing password
     passInputDom = document.getElementById('memberPass');
     iconDom = document.querySelector('.passShowIcon');
     if(passInputDom.type == 'password'){

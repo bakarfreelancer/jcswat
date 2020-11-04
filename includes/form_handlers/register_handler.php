@@ -4,8 +4,7 @@ $last_name = "";
 $email = "";
 $pass = "";
 $c_pass = "";
-$error = array();
-
+$error = array(); //store all errors
 if(isset($_POST['register'])){
     // FIRST NAME
     $first_name = strip_tags($_POST['first_name']); //REMOVE HTML TAGS
@@ -40,7 +39,7 @@ if(isset($_POST['register'])){
         array_push($error, 'Password does not match');
     }
     
-    if(empty ($error)){
+    if(empty ($error)){ //will add new user if no error is in data he provided
         $pass = md5($pass);
         $query=mysqli_query($conn, "INSERT INTO users(first_name, last_name, email, password) VALUES( '$first_name', '$last_name', '$email', '$pass')");
 
@@ -49,7 +48,7 @@ if(isset($_POST['register'])){
 		$_SESSION['last_name'] = "";
         $_SESSION['r_email'] = "";
         
-        $successSignUp=true;
+        $successSignUp=true; //for ensuring that user registered successfully
         // header("Location: index.php?page=login");
         
     }

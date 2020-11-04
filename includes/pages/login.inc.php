@@ -1,8 +1,9 @@
 <?php
-if(isset($_SESSION['role'])){
-    if($_SESSION['role'] == 'admin')
-    header('Location: dashboard.php');
-    else header('Location: index.php');
+include 'includes/form_handlers/register_handler.php';
+if(isset($_SESSION['role'])){//will redirect users to different page if they are already logged in
+    if($_SESSION['role'] == 'admin') //will redirect admin to dashbaord
+    redirect('dashboard.php');
+    else redirect('index.php'); //will redirect other members to home page
 }
 ?>
 <div class="spacer"></div>
@@ -10,7 +11,6 @@ if(isset($_SESSION['role'])){
 <div class="spacer"></div>
 <div class="container">
     <div class="user col-md-10 mx-auto">
-    <!-- Success register Message -->
     <?php
     if(isset($loginSuccess)){ //FAILED LOGIN MESSAGE
         echo '<div>

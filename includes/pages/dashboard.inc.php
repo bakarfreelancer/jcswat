@@ -1,5 +1,5 @@
 <?php
-if($_SESSION['role'] != 'admin'){
+if($_SESSION['role'] != 'admin'){//will redirect to home page if user is not admin
     echo '<script>location.replace("index.php")</script>';
   }
 // TOTAL SUBSCRIBERS

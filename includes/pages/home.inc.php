@@ -217,7 +217,7 @@
       <div class="modal-body" style="width:100%" >
             <div class= "marQuee">
 <?php
-$news_title = mysqli_query($conn, 'SELECT title FROM event_news ORDER BY publish_date DESC LIMIT 8');
+$news_title = mysqli_query($conn, 'SELECT title FROM event_news ORDER BY publish_date DESC LIMIT 8'); //will fetch the latest 8 news from news table
 while($row = mysqli_fetch_array($news_title)){
   echo '<p>';
   echo $row[0];

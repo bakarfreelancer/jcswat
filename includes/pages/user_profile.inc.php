@@ -1,8 +1,10 @@
 <div class="spacer"></div>
 <div class="spacer"></div>
 <?php
+//same as profile.inc.php but for other than admin
+include 'includes/form_handlers/profile_update_handler.php';
 if(!isset($_GET['id']) || $_SESSION['id'] != $_GET['id']){
-  echo '<script>location.replace("dashboard.php")</script>';
+  redirect('index.php');
 }
 if(isset($_GET['id'])){
 $memberId = $_GET['id'];
@@ -13,14 +15,29 @@ $member_data = mysqli_fetch_array($member_query);
 }
 ?>
 <div class="contaner-fluid">
-    <div>
+    <div class="container my-4">
+<?php
+if(isset($_SESSION['successUpdate'])){
+  if($_SESSION['successUpdate'] == 1){
+    echo '<div class="alert alert-success successDeleteMember my-3" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <strong>Updated!</strong> Profile updated successfully!</div>';
+    $_SESSION['successUpdate'] = 0;
+}else if($_SESSION['successUpdate'] == 2){
+  echo '<div class="alert alert-danger successDeleteMember my-3" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Error!</strong> Email already exist!</div>';
+  $_SESSION['successUpdate'] = 0;
+}
+}
+?>
       <span class="text-center my-3 d-block">
       <a href="dashboard.php?page=members" class="btn btn-pr float-left"><i class="fas fa-arrow-left"></i></a>
         <h3 class="text-center d-inline-block">EDIT YOUR DETAILS</h3>
       </span>
     </div>
     <div class="editMember col-md-8 mx-auto">
-    <form class="needs-validation editMemberForm contactForm" method="POST" action="dashboard.php?page=profile&id=<?php echo $member_data['s_no'];?>" novalidate>
+    <form class="needs-validation editMemberForm contactForm" method="POST" action="index.php?page=user_profile&id=<?php echo $member_data['s_no'];?>" novalidate>
             <div class="form-row">
             <!-- FIRST NAME -->
               <div class="col-md-6 mb-3">
@@ -113,6 +130,7 @@ $member_data = mysqli_fetch_array($member_query);
           </form>
     </div>
 </div>
+<div class="spacer"></div>
 
 <script>
     function showPassAction() {
