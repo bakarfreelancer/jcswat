@@ -8,7 +8,7 @@ if($_SESSION['role'] != 'admin'){
 }
 ?>
 <div class="container-fluid">
-<?php
+    <?php
   if(isset($_SESSION['delete_news'])){// if some news deleted successfully if will show message
     if($_SESSION['delete_news'] == 1){
       echo '<div class="alert alert-success successDeleteMember" role="alert">
@@ -75,16 +75,16 @@ if(isset($_SESSION['role'])){
 ?>
     <div>
         <span class="text-center my-3 d-block">
-          <h3 class="text-center d-inline-block">News</h3>
-          <?php 
+            <h3 class="text-center d-inline-block">News</h3>
+            <?php 
           if(isset($_SESSION['role'])){//if admin is logged in it will show add news button
             if($_SESSION['role'] == 'admin'){
             echo '<a href="dashboard.php?page=add_news" class="btn btn-pr float-right position-absolute addNews">add news <i class="fas fa-plus"></i></a>';
           }
           }
           ?>
-          
-      </span>
+
+        </span>
     </div>
     <div>
         <?php
@@ -127,7 +127,7 @@ if(isset($_SESSION['role'])){
                 }
         ?>
     </div>
-<?php
+    <?php
 if(isset($_SESSION['role'])){
   if($_SESSION['role'] != 'admin'){
   echo '</div>';
