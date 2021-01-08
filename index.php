@@ -5,6 +5,7 @@ require 'config/functions.php';
 require 'includes/form_handlers/login_handler.php';
 require 'includes/form_handlers/bs-admissions_handler.php';
 require 'includes/form_handlers/fsc-admissions_handler.php';
+require 'includes/form_handlers/search_admissions_handler.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
