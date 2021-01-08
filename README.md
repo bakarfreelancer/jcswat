@@ -1,8 +1,6 @@
 # GOVT. PG JAHANZEB COLLEGE SAIDU SHARIF SWAT
 
-> A practice project of Web fundamentals
-
-Task assigned by **Mr. Uzair Ali**
+> A Project of CIT Course
 
 ## View site [jcswat.theoperatingsystems.com](https://jcswat.theoperatingsystems.com/)
 
@@ -21,6 +19,7 @@ Task assigned by **Mr. Uzair Ali**
       - main.js
   - config
     - database configuration
+    - function.php
   - includes
     - components
       - header.php (main page header)
@@ -29,6 +28,8 @@ Task assigned by **Mr. Uzair Ali**
       - dashboard_footer.php (dashboard footer)
     - form_handlers
       - add_news_handler.php
+      - bs-admissions_handler.php
+      - fsc-admissions_handler.php
       - update_news_handler.php
       - register_handler.php
       - login_handler.php
@@ -38,11 +39,13 @@ Task assigned by **Mr. Uzair Ali**
       - about.inc.php
       - add_news.inc.php
       - admissions.inc.php
+      - bs_admissions.inc.php
       - confirm_delete.inc.php
       - contact.inc.php
       - csdept.inc.php
       - dashboard.inc.php
       - english.inc.php
+      - fsc_admissions.inc.php
       - home.inc.php
       - login.inc.php
       - logout.inc.php
@@ -65,7 +68,8 @@ Task assigned by **Mr. Uzair Ali**
    - counter up
    - waypoints
 
-## Contributes __2__
+## Contributes __3__
 
 - [Talha rahman](https://github.com/itzbUnny1)
 - [Abu Bakar](https://github.com/bakarfreelancer/)
+- Ahmad Jan

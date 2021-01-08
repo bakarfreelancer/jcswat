@@ -147,7 +147,6 @@ if($bs_success==1){
         <span class="step"></span>
         <span class="step"></span>
         <span class="step"></span>
-        <span class="step"></span>
     </div>
 </form>
 

@@ -3,6 +3,11 @@
 <h2 class="text-center my-4">Admissions</h2>
 <div class="container-fluid">
     <div class="container">
+        <div>
+            <form action="">
+                <input type="text" name="" class="form-control">
+            </form>
+        </div>
         <div class="row">
             <div class="col-md-3 col-sm-7 mx-auto">
                 <a href="index.php?page=fsc_admission">
