@@ -117,6 +117,22 @@ if($_SESSION['role'] != 'admin'){
                                 </ul>
                             </div>
                         </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="far fa-address-card"></i>
+                                <span>Admissions</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul class="newsSub">
+                                    <li>
+                                        <a href="dashboard.php?page=admissions-fsc"> FA/FSc</a>
+                                    </li>
+                                    <li>
+                                        <a href="dashboard.php?page=admissions-bs">BS</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                         <li>
                             <a href="dashboard.php?page=members">
                                 <i class="fas fa-users"></i>
