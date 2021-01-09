@@ -38,6 +38,8 @@
     - pages (All pages of site)
       - about.inc.php
       - add_news.inc.php
+      - admissions-bs.inc.php
+      - admissions-fsc.inc.php
       - admissions.inc.php
       - bs_admissions.inc.php
       - confirm_delete.inc.php
