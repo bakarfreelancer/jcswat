@@ -501,6 +501,53 @@ nav {
   font-size: 200%;
 }
 
+/* Admission Search table */
+.regSearchTable {
+  table-layout: fixed;
+  width: 100%;
+}
+.regSearchTable .tableHeadRow {
+  height: 50px;
+  color: #fff;
+  background-color: var(--primary-color);
+}
+.regSearchTable tr td {
+  padding: 10px;
+  overflow: scroll;
+}
+.regSearchTable tr {
+  border-bottom: 1px solid #e7e7e7;
+}
+.regSearchTable tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+.regSearchTable tr th {
+  text-align: center;
+  vertical-align: center;
+}
+.regSearchTable tr .sno {
+  width: 50px;
+}
+.regSearchTable tr .name {
+  width: 140px;
+}
+.regSearchTable tr .gender {
+  width: 90px;
+}
+.regSearchTable tr .contact {
+  width: 150px;
+}
+.regSearchTable tr .address {
+  width: 190px;
+}
+.regSearchTable tr .group {
+  width: 160px;
+}
+.regSearchTable tr .marks,
+.regSearchTable tr .board {
+  width: 90px;
+}
+
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
 }

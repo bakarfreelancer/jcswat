@@ -21,6 +21,7 @@ require 'includes/form_handlers/search_admissions_handler.php';
     <link rel="stylesheet" href="./assets/css/about.css">
     <link rel="stylesheet" href="./assets/css/animate.css">
     <link rel="stylesheet" href="./assets/css/annimation.css">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
     <!-- FONTAWESOME -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <!-- JQUERY -->
