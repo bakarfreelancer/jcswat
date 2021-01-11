@@ -10,7 +10,7 @@
                     <input type="number" name="register_search" class="form-control" placeholder="Contact no">
                 </div>
                 <div class="form-group mx-sm-3 mb-2">
-                    <select name="register_search_cat" id="">
+                    <select name="register_search_cat" class="form-control" id="">
                         <option value="fsc_admissions">FA/FSc</option>
                         <option value="bs_admissions">BS</option>
                     </select>

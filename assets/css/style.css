@@ -513,7 +513,6 @@ nav {
 }
 .regSearchTable tr td {
   padding: 10px;
-  overflow: scroll;
 }
 .regSearchTable tr {
   border-bottom: 1px solid #e7e7e7;
