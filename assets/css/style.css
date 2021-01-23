@@ -628,6 +628,7 @@ nav {
     margin: 0;
     top: 28px;
     left: 28px;
+    border-radius: 50px;
   }
 
   .circleBorder {
