@@ -2,7 +2,7 @@
 
 > A Project of CIT Course
 
-## View site [jcswat.theoperatingsystems.com](https://jcswat.theoperatingsystems.com/)
+## View site [projects.theoperatingsystems.com](https://projects.theoperatingsystems.com/jcswat)
 
 ## Site Structure directory wise
 
