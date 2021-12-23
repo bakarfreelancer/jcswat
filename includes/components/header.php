@@ -21,7 +21,6 @@
           <a class="dropdown-item" href="index.php?page=english">English</a>
           <a class="dropdown-item" href="index.php?page=physics">Physics</a>
           <div class="dropdown-divider"></div>
-          <a class="btn btn-pr text-center mx-auto d-block" href="index.php?page=admissions"><span class="text-white">Admissions</span></a>
         </div>
       </li>
       <li class="nav-item">
@@ -30,6 +29,7 @@
       <li class="nav-item">
         <a class="nav-link" href="index.php?page=contact"><i class="fas fa-phone-square-alt"></i> Contact</a>
       </li> 
+      
       <!-- login users     -->
       <?php
       if(isset($_SESSION['role'])){
@@ -55,7 +55,10 @@
         </li>';
         }
         ?>
-        </ul>
+        <li class="nav-item">
+          <a class="btn btn-pr text-center mx-auto d-block" href="index.php?page=admissions"><span class="text-white">Admissions</span></a>
+        </li>
+      </ul>
   </div>
   </div>
 </nav>

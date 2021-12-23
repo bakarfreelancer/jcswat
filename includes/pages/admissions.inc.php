@@ -51,7 +51,7 @@
                 if($counter<10)echo '0'.$counter;
                 else echo $counter;
                 echo '</td>';
-                echo '<td>'.$row['name'].'</td>';
+                echo '<td>'.$row['first_name'].' ' .$row['last_name'].'</td>';
                 echo '<td>'.$row['f_name'].'</td>';
                 echo '<td>'.$row['gender'].'</td>';
                 echo '<td>'.$row['contact_no'].'</td>';

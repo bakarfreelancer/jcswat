@@ -1,3 +1,6 @@
+<?php
+if(!isset($_SESSION['id'])) echo '<script>window.location = "index.php"</script>'
+?>
 <style>
 #regForm {
     background-color: #ffffff;
@@ -86,7 +89,7 @@ if($bs_success==1){
     <h1>Register</h1>
     <!-- One "tab" for each step in the form: -->
     <div class="tab">Personal info:
-        <p><input type="text" name="name" placeholder="Name" /> </p>
+        <p><input type="hidden" name="sno" value="<?php echo $_SESSION['id'] ?>" placeholder="Name" /> </p>
         <p><input type="text" name="f_name" placeholder="Father Name" /></p>
         <label for="" class="mr-4 text-dark">Gender: </label>
         <input type="radio" name="gender" value="male" id="male" class="form-check-input" />

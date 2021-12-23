@@ -1,11 +1,11 @@
 <?php
 $bs_success = 0;
 
-if(isset($_POST["name"])){
+if(isset($_POST["sno"])){
     // echo '<pre>';
     // print_r($_POST);
     // echo '</pre>';
-    $name = $_POST["name"];
+    $sno = $_POST["sno"];
     $f_name = $_POST["f_name"];
     $gender = $_POST["gender"];
     $contact_no = $_POST["contact_no"];
@@ -20,7 +20,7 @@ if(isset($_POST["name"])){
     $board = $_POST["board"];
     $deptt = $_POST["deptt"];
 
-    $sql ="INSERT INTO  bs_admissions(name , f_name, gender, contact_no, address, matric_group, matric_marks_obtain, matric_total_marks, matric_board, fsc_group, marks_obtain, total_marks, board, deptt) VALUES( '$name', '$f_name', '$gender', '$contact_no', '$address', '$matric_group', '$matric_marks_obtain', '$matric_total_marks', '$matric_board', '$fsc_group', '$marks_obtain', '$total_marks', '$board', '$deptt')";
+    $sql ="INSERT INTO  bs_admissions(f_name,gender, contact_no, address, matric_group, matric_marks_obtain, matric_total_marks, matric_board, fsc_group, marks_obtain, total_marks, board, deptt, user_id) VALUES('$f_name', '$gender', '$contact_no', '$address', '$matric_group', '$matric_marks_obtain', '$matric_total_marks', '$matric_board', '$fsc_group', '$marks_obtain', '$total_marks', '$board', '$deptt', $sno)";
     $bs_query = mysqli_query($conn, $sql);
     if($bs_query) $bs_success = 1;
     else $bs_success = 2;

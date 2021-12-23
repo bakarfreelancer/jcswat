@@ -1,5 +1,5 @@
 <?php
-    $sql = "SELECT * FROM bs_admissions";
+    $sql = "SELECT bs_admissions.*, users.first_name, users.last_name FROM bs_admissions INNER JOIN users ON bs_admissions.user_id = users.s_no";
     $register_search_query = mysqli_query($conn, $sql);
     $no_of_admissions = mysqli_num_rows($register_search_query);
 ?>
@@ -35,7 +35,7 @@
                 if($counter<10)echo '0'.$counter;
                 else echo $counter;
                 echo '</td>';
-                echo '<td>'.$row['name'].'</td>';
+                echo '<td>'.$row['first_name'].' '. $row['last_name'].'</td>';
                 echo '<td>'.$row['f_name'].'</td>';
                 echo '<td>'.$row['gender'].'</td>';
                 echo '<td>'.$row['contact_no'].'</td>';
